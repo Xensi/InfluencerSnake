@@ -130,10 +130,6 @@
       "children": [
         {
           "type": "number",
-          "value": 0
-        },
-        {
-          "type": "number",
           "value": 608
         }
       ]
@@ -149,10 +145,6 @@
       "children": [
         {
           "type": "number",
-          "value": 0
-        },
-        {
-          "type": "number",
           "value": 256
         }
       ]
@@ -160,7 +152,17 @@
     {
       "name": "SnakeHeadIndex",
       "type": "number",
-      "value": 1
+      "value": 0
+    },
+    {
+      "name": "FollowerIndex",
+      "type": "number",
+      "value": 0
+    },
+    {
+      "name": "NewPos",
+      "type": "number",
+      "value": 0
     }
   ],
   "layouts": [
@@ -170,7 +172,12 @@
     }
   ],
   "externalEvents": [],
-  "eventsFunctionsExtensions": [],
+  "eventsFunctionsExtensions": [
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/arraytools"
+    }
+  ],
   "externalLayouts": [],
   "externalSourceFiles": []
 }

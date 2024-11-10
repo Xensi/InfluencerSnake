@@ -412,40 +412,6 @@
             "",
             "\"Tick\""
           ]
-        },
-        {
-          "type": {
-            "value": "Create"
-          },
-          "parameters": [
-            "",
-            "Follower",
-            "0",
-            "0",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "ScalableCapability::ScalableBehavior::SetValue"
-          },
-          "parameters": [
-            "Follower",
-            "Scale",
-            "=",
-            ".5"
-          ]
-        },
-        {
-          "type": {
-            "value": "SetNumberObjectVariable"
-          },
-          "parameters": [
-            "Follower",
-            "InstanceIndex",
-            "=",
-            "1"
-          ]
         }
       ],
       "events": [
@@ -598,6 +564,134 @@
           "name": "Index",
           "type": "number",
           "value": 0
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "KeyPressed"
+          },
+          "parameters": [
+            "",
+            "Space"
+          ]
+        }
+      ],
+      "actions": [],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "Follower",
+                "XPositions[0]",
+                "YPositions[0]",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ScalableCapability::ScalableBehavior::SetValue"
+              },
+              "parameters": [
+                "Follower",
+                "Scale",
+                "=",
+                ".5"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberObjectVariable"
+              },
+              "parameters": [
+                "Follower",
+                "InstanceIndex",
+                "=",
+                "FollowerIndex"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "NewPos",
+                "=",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "ArrayTools::GlobalInsertAt"
+              },
+              "parameters": [
+                "",
+                "XPositions",
+                "0",
+                "NewPos",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "NewPos",
+                "=",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "ArrayTools::GlobalInsertAt"
+              },
+              "parameters": [
+                "",
+                "YPositions",
+                "0",
+                "NewPos",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "FollowerIndex",
+                "+",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "SnakeHeadIndex",
+                "+",
+                "1"
+              ]
+            }
+          ]
         }
       ]
     }
