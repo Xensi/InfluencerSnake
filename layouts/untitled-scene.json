@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 0.8993607583666625,
+    "zoomFactor": 0.8416428125373109,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -48,6 +48,39 @@
       "x": 608,
       "y": 256,
       "zOrder": 1,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 32,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Food",
+      "persistentUuid": "9742cd8b-b3b9-4ffc-8bf5-d14fd7ff3c7b",
+      "width": 32,
+      "x": 832,
+      "y": 128,
+      "zOrder": 2,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Game_Loss",
+      "persistentUuid": "7a42ede1-a73a-4ce7-8051-0ceb13473da2",
+      "width": 0,
+      "x": 384,
+      "y": 288,
+      "zOrder": 3,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -181,6 +214,109 @@
           ]
         }
       ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "Food",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "NewSprite",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "NewSprite5",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 64,
+                        "y": 0
+                      },
+                      {
+                        "x": 64,
+                        "y": 64
+                      },
+                      {
+                        "x": 0,
+                        "y": 64
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "Game_Loss",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "YOU LOST",
+      "font": "",
+      "textAlignment": "left",
+      "characterSize": 100,
+      "color": {
+        "b": 0,
+        "g": 0,
+        "r": 0
+      },
+      "content": {
+        "bold": false,
+        "isOutlineEnabled": false,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "YOU LOST",
+        "font": "",
+        "textAlignment": "left",
+        "verticalTextAlignment": "top",
+        "characterSize": 100,
+        "color": "0;0;0"
+      }
     }
   ],
   "objectsFolderStructure": {
@@ -190,7 +326,13 @@
         "objectName": "SnakeHead"
       },
       {
+        "objectName": "Game_Loss"
+      },
+      {
         "objectName": "Follower"
+      },
+      {
+        "objectName": "Food"
       }
     ]
   },
@@ -236,6 +378,26 @@
             "=",
             "0"
           ]
+        },
+        {
+          "type": {
+            "value": "MettreXY"
+          },
+          "parameters": [
+            "Food",
+            "=",
+            "RandomWithStep(0, 1000, 32)",
+            "=",
+            "RandomWithStep(0, 700, 32)"
+          ]
+        },
+        {
+          "type": {
+            "value": "Cache"
+          },
+          "parameters": [
+            "Game_Loss"
+          ]
         }
       ]
     },
@@ -249,6 +411,16 @@
           "parameters": [
             "",
             "w"
+          ]
+        },
+        {
+          "type": {
+            "value": "NumberVariable"
+          },
+          "parameters": [
+            "SnakeYDir",
+            "!=",
+            "1"
           ]
         }
       ],
@@ -286,6 +458,16 @@
             "",
             "s"
           ]
+        },
+        {
+          "type": {
+            "value": "NumberVariable"
+          },
+          "parameters": [
+            "SnakeYDir",
+            "!=",
+            "-1"
+          ]
         }
       ],
       "actions": [
@@ -322,6 +504,16 @@
             "",
             "a"
           ]
+        },
+        {
+          "type": {
+            "value": "NumberVariable"
+          },
+          "parameters": [
+            "SnakeXDir",
+            "!=",
+            "1"
+          ]
         }
       ],
       "actions": [
@@ -357,6 +549,16 @@
           "parameters": [
             "",
             "d"
+          ]
+        },
+        {
+          "type": {
+            "value": "NumberVariable"
+          },
+          "parameters": [
+            "SnakeXDir",
+            "!=",
+            "-1"
           ]
         }
       ],
@@ -416,6 +618,7 @@
       ],
       "events": [
         {
+          "folded": true,
           "type": "BuiltinCommonInstructions::ForEachChildVariable",
           "iterableVariableName": "XPositions",
           "valueIteratorVariableName": "child",
@@ -459,6 +662,18 @@
                   ]
                 }
               ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "This is meant to grab a specific instance of a follower that matches the index"
             },
             {
               "type": "BuiltinCommonInstructions::ForEach",
@@ -557,6 +772,211 @@
               ]
             }
           ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Touching a follower kills the snake. This takes place after the followers have moved to prevent a false game loss"
+        },
+        {
+          "folded": true,
+          "type": "BuiltinCommonInstructions::ForEach",
+          "object": "Follower",
+          "conditions": [],
+          "actions": [],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "NumberObjectVariable"
+                  },
+                  "parameters": [
+                    "Follower",
+                    "InstanceIndex",
+                    "=",
+                    "Index"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Distance"
+                  },
+                  "parameters": [
+                    "Follower",
+                    "SnakeHead",
+                    "0",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Montre"
+                  },
+                  "parameters": [
+                    "Game_Loss",
+                    ""
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "Distance"
+              },
+              "parameters": [
+                "SnakeHead",
+                "Food",
+                "0",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "MettreXY"
+              },
+              "parameters": [
+                "Food",
+                "=",
+                "RandomWithStep(0, 1000, 32)",
+                "=",
+                "RandomWithStep(0, 700, 32)"
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "Follower",
+                    "XPositions[0]",
+                    "YPositions[0]",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ChangePlan"
+                  },
+                  "parameters": [
+                    "Follower",
+                    "=",
+                    "-100"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ScalableCapability::ScalableBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "Follower",
+                    "Scale",
+                    "=",
+                    ".5"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberObjectVariable"
+                  },
+                  "parameters": [
+                    "Follower",
+                    "InstanceIndex",
+                    "=",
+                    "FollowerIndex"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "NewPos",
+                    "=",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ArrayTools::GlobalInsertAt"
+                  },
+                  "parameters": [
+                    "",
+                    "XPositions",
+                    "0",
+                    "NewPos",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "NewPos",
+                    "=",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ArrayTools::GlobalInsertAt"
+                  },
+                  "parameters": [
+                    "",
+                    "YPositions",
+                    "0",
+                    "NewPos",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "FollowerIndex",
+                    "+",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "SnakeHeadIndex",
+                    "+",
+                    "1"
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ],
       "variables": [
@@ -564,134 +984,6 @@
           "name": "Index",
           "type": "number",
           "value": 0
-        }
-      ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "value": "KeyPressed"
-          },
-          "parameters": [
-            "",
-            "Space"
-          ]
-        }
-      ],
-      "actions": [],
-      "events": [
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "BuiltinCommonInstructions::Once"
-              },
-              "parameters": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "Create"
-              },
-              "parameters": [
-                "",
-                "Follower",
-                "XPositions[0]",
-                "YPositions[0]",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "ScalableCapability::ScalableBehavior::SetValue"
-              },
-              "parameters": [
-                "Follower",
-                "Scale",
-                "=",
-                ".5"
-              ]
-            },
-            {
-              "type": {
-                "value": "SetNumberObjectVariable"
-              },
-              "parameters": [
-                "Follower",
-                "InstanceIndex",
-                "=",
-                "FollowerIndex"
-              ]
-            },
-            {
-              "type": {
-                "value": "SetNumberVariable"
-              },
-              "parameters": [
-                "NewPos",
-                "=",
-                "0"
-              ]
-            },
-            {
-              "type": {
-                "value": "ArrayTools::GlobalInsertAt"
-              },
-              "parameters": [
-                "",
-                "XPositions",
-                "0",
-                "NewPos",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "SetNumberVariable"
-              },
-              "parameters": [
-                "NewPos",
-                "=",
-                "0"
-              ]
-            },
-            {
-              "type": {
-                "value": "ArrayTools::GlobalInsertAt"
-              },
-              "parameters": [
-                "",
-                "YPositions",
-                "0",
-                "NewPos",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "SetNumberVariable"
-              },
-              "parameters": [
-                "FollowerIndex",
-                "+",
-                "1"
-              ]
-            },
-            {
-              "type": {
-                "value": "SetNumberVariable"
-              },
-              "parameters": [
-                "SnakeHeadIndex",
-                "+",
-                "1"
-              ]
-            }
-          ]
         }
       ]
     }
@@ -766,6 +1058,10 @@
     {
       "name": "Scale",
       "type": "ScalableCapability::ScalableBehavior"
+    },
+    {
+      "name": "Text",
+      "type": "TextContainerCapability::TextContainerBehavior"
     }
   ]
 }
