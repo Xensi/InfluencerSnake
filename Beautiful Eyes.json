@@ -108,6 +108,28 @@
         "name": "NewSprite5",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/NewSprite6.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite6",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Explosion1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Explosion1.png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Particles/PixiJS/c693a024a868728da3e9e91c9d23513306582bda6ba10191afc24d6c5667dd5e_Explosion1.png",
+          "name": "Explosion1.png"
+        }
       }
     ],
     "resourceFolders": []
@@ -172,6 +194,16 @@
       "name": "NewPos",
       "type": "number",
       "value": 0
+    },
+    {
+      "name": "DesiredDir",
+      "type": "string",
+      "value": "right"
+    },
+    {
+      "name": "GameLoss",
+      "type": "boolean",
+      "value": false
     }
   ],
   "layouts": [
