@@ -53,7 +53,9 @@
     "authorIds": [],
     "authorUsernames": [],
     "categories": [],
-    "playableDevices": [],
+    "playableDevices": [
+      "keyboard"
+    ],
     "extensionProperties": [],
     "platforms": [
       {
@@ -104,7 +106,7 @@
         "alwaysLoaded": false,
         "file": "assets/NewSprite5.png",
         "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/NewSprite5.png\"}",
         "name": "NewSprite5",
         "smoothed": true,
         "userAdded": false
@@ -204,6 +206,16 @@
       "name": "GameLoss",
       "type": "boolean",
       "value": false
+    },
+    {
+      "name": "XCorner",
+      "type": "number",
+      "value": 1184
+    },
+    {
+      "name": "YCorner",
+      "type": "number",
+      "value": 672
     }
   ],
   "layouts": [

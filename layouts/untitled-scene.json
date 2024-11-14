@@ -2519,22 +2519,30 @@
         },
         {
           "type": {
-            "value": "MettreXY"
-          },
-          "parameters": [
-            "Food",
-            "=",
-            "RandomWithStep(0, 1000, 32)",
-            "=",
-            "RandomWithStep(0, 700, 32)"
-          ]
-        },
-        {
-          "type": {
             "value": "Cache"
           },
           "parameters": [
             "Game_Loss"
+          ]
+        }
+      ],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "MettreXY"
+              },
+              "parameters": [
+                "Food",
+                "=",
+                "RandomWithStep(32, XCorner, 32)",
+                "=",
+                "RandomWithStep(32, YCorner, 32)"
+              ]
+            }
           ]
         }
       ]
@@ -2989,9 +2997,9 @@
               "parameters": [
                 "Food",
                 "=",
-                "RandomWithStep(0, 1000, 32)",
+                "RandomWithStep(32, XCorner, 32)",
                 "=",
-                "RandomWithStep(0, 700, 32)"
+                "RandomWithStep(32, YCorner, 32)"
               ]
             }
           ],
