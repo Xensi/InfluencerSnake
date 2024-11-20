@@ -2156,7 +2156,7 @@
       "behaviors": [],
       "animations": [
         {
-          "name": "NewSprite",
+          "name": "SnakeHead",
           "useMultipleDirections": false,
           "directions": [
             {
@@ -2166,7 +2166,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "NewSprite3",
+                  "image": "SnakeHead",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -2182,20 +2182,69 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 0,
-                        "y": 0
+                        "x": 23,
+                        "y": 10
                       },
                       {
-                        "x": 64,
-                        "y": 0
+                        "x": 48,
+                        "y": 10
                       },
                       {
-                        "x": 64,
-                        "y": 64
+                        "x": 48,
+                        "y": 49
                       },
                       {
-                        "x": 0,
-                        "y": 64
+                        "x": 23,
+                        "y": 49
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "NewSprite",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "NewSprite9",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 23,
+                        "y": 10
+                      },
+                      {
+                        "x": 48,
+                        "y": 10
+                      },
+                      {
+                        "x": 48,
+                        "y": 49
+                      },
+                      {
+                        "x": 23,
+                        "y": 49
                       }
                     ]
                   ]
@@ -2223,6 +2272,55 @@
       "behaviors": [],
       "animations": [
         {
+          "name": "Follower",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Follower",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 25,
+                        "y": 11
+                      },
+                      {
+                        "x": 44,
+                        "y": 11
+                      },
+                      {
+                        "x": 44,
+                        "y": 56
+                      },
+                      {
+                        "x": 25,
+                        "y": 56
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
           "name": "NewSprite",
           "useMultipleDirections": false,
           "directions": [
@@ -2249,20 +2347,20 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 0,
-                        "y": 0
+                        "x": 25,
+                        "y": 11
                       },
                       {
-                        "x": 64,
-                        "y": 0
+                        "x": 44,
+                        "y": 11
                       },
                       {
-                        "x": 64,
-                        "y": 64
+                        "x": 44,
+                        "y": 56
                       },
                       {
-                        "x": 0,
-                        "y": 64
+                        "x": 25,
+                        "y": 56
                       }
                     ]
                   ]
@@ -2454,14 +2552,6 @@
             "SnakeYDir",
             "=",
             "0"
-          ]
-        },
-        {
-          "type": {
-            "value": "Cache"
-          },
-          "parameters": [
-            "Game_Loss"
           ]
         }
       ],
@@ -3233,19 +3323,20 @@
       "actions": [
         {
           "type": {
-            "value": "Montre"
-          },
-          "parameters": [
-            "Game_Loss",
-            ""
-          ]
-        },
-        {
-          "type": {
             "value": "Cache"
           },
           "parameters": [
             "SnakeHead"
+          ]
+        },
+        {
+          "type": {
+            "value": "Scene"
+          },
+          "parameters": [
+            "",
+            "\"LossScreen\"",
+            ""
           ]
         }
       ],
@@ -3403,10 +3494,6 @@
     {
       "name": "Scale",
       "type": "ScalableCapability::ScalableBehavior"
-    },
-    {
-      "name": "Text",
-      "type": "TextContainerCapability::TextContainerBehavior"
     }
   ]
 }

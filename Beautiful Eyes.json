@@ -97,7 +97,7 @@
         "alwaysLoaded": false,
         "file": "assets/NewSprite4.png",
         "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/NewSprite4.png\"}",
         "name": "NewSprite4",
         "smoothed": true,
         "userAdded": false
@@ -148,6 +148,33 @@
         "kind": "image",
         "metadata": "{\"extension\":\".png\"}",
         "name": "NewSprite8",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/NewSprite9.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite9",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Follower.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Follower",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/SnakeHead.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "SnakeHead",
         "smoothed": true,
         "userAdded": false
       }
