@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.546875,
+    "zoomFactor": 0.3010461197182464,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -28,14 +28,14 @@
       "angle": 0,
       "customSize": true,
       "depth": 1,
-      "height": 479,
+      "height": 718,
       "keepRatio": true,
       "layer": "",
-      "name": "CreditsText",
-      "persistentUuid": "82fc9f19-73f6-4b68-96ec-b092903014d3",
-      "width": 543,
-      "x": 375,
-      "y": 14,
+      "name": "Curtains",
+      "persistentUuid": "c46b1292-3b46-404a-9141-2b905fde394c",
+      "width": 1291,
+      "x": -5,
+      "y": 0,
       "zOrder": 1,
       "numberProperties": [],
       "stringProperties": [],
@@ -44,16 +44,49 @@
     {
       "angle": 0,
       "customSize": true,
+      "depth": 1,
+      "height": 208,
+      "keepRatio": true,
+      "layer": "",
+      "name": "CreditsText",
+      "persistentUuid": "0b9ceb09-6c57-4fda-b31a-dc5b6af75f16",
+      "width": 988,
+      "x": 179,
+      "y": 293,
+      "zOrder": 2,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "CreditsBigText",
+      "persistentUuid": "b6902681-cee1-4bbe-9261-d47cfae54dda",
+      "width": 0,
+      "x": 497,
+      "y": 80,
+      "zOrder": 3,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
       "depth": 48,
-      "height": 131,
+      "height": 98,
       "keepRatio": true,
       "layer": "",
       "name": "RedButtonWithShadow",
-      "persistentUuid": "32c6e021-8dc8-475e-a375-bcb3444b2491",
-      "width": 307,
-      "x": 484,
-      "y": 549,
-      "zOrder": 2,
+      "persistentUuid": "a0541811-33ee-4c1d-8973-69c605e32fc5",
+      "width": 248,
+      "x": 515,
+      "y": 591,
+      "zOrder": 4,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -62,7 +95,7 @@
   "objects": [
     {
       "assetStoreId": "",
-      "bold": false,
+      "bold": true,
       "italic": false,
       "name": "CreditsText",
       "smoothed": true,
@@ -71,17 +104,17 @@
       "variables": [],
       "effects": [],
       "behaviors": [],
-      "string": "Developed by:\nBhavya Anil\nSamuel Si\nSteven Sung\n\nSprites by Samuel Si\n\nArt by Bhavya Anil\n\nButton Template and Button Behavior from Gdevelop",
-      "font": "",
+      "string": "Developed by: Bhavya Anil (art), Samuel Si (sprites), Steven Sung (music)\nSound: OpenGameArt\nArt: Canva\nButton Template and Button Behavior: Gdevelop",
+      "font": "19d8a6191c340d758d5aff8b2f70d68f629cc6aaa735e7c38c8f3ea30981d73f_NotoSansJP-Light.ttf",
       "textAlignment": "left",
       "characterSize": 40,
       "color": {
-        "b": 0,
-        "g": 0,
-        "r": 0
+        "b": 255,
+        "g": 255,
+        "r": 255
       },
       "content": {
-        "bold": false,
+        "bold": true,
         "isOutlineEnabled": false,
         "isShadowEnabled": false,
         "italic": false,
@@ -94,33 +127,33 @@
         "shadowOpacity": 127,
         "smoothed": true,
         "underlined": false,
-        "text": "Developed by:\nBhavya Anil\nSamuel Si\nSteven Sung\n\nSprites by Samuel Si\n\nArt by Bhavya Anil\n\nButton Template and Button Behavior from Gdevelop",
-        "font": "",
+        "text": "Developed by: Bhavya Anil (art), Samuel Si (sprites), Steven Sung (music)\nSound: OpenGameArt\nArt: Canva\nButton Template and Button Behavior: Gdevelop",
+        "font": "19d8a6191c340d758d5aff8b2f70d68f629cc6aaa735e7c38c8f3ea30981d73f_NotoSansJP-Light.ttf",
         "textAlignment": "left",
         "verticalTextAlignment": "top",
         "characterSize": 40,
-        "color": "0;0;0"
+        "color": "255;255;255"
       }
     },
     {
       "assetStoreId": "",
       "bold": false,
       "italic": false,
-      "name": "NewText",
+      "name": "CreditsBigText",
       "smoothed": true,
       "type": "TextObject::Text",
       "underlined": false,
       "variables": [],
       "effects": [],
       "behaviors": [],
-      "string": "Text",
-      "font": "",
-      "textAlignment": "left",
-      "characterSize": 20,
+      "string": "CREDITS",
+      "font": "8c4544654743d56682bd6d16e092a9a29da45d2a6b35e810d9d3b73217492df9_OpenSans-Italic-VariableFont_wdth,wght.ttf",
+      "textAlignment": "center",
+      "characterSize": 80,
       "color": {
-        "b": 0,
-        "g": 0,
-        "r": 0
+        "b": 255,
+        "g": 255,
+        "r": 255
       },
       "content": {
         "bold": false,
@@ -136,12 +169,12 @@
         "shadowOpacity": 127,
         "smoothed": true,
         "underlined": false,
-        "text": "Text",
-        "font": "",
-        "textAlignment": "left",
+        "text": "CREDITS",
+        "font": "8c4544654743d56682bd6d16e092a9a29da45d2a6b35e810d9d3b73217492df9_OpenSans-Italic-VariableFont_wdth,wght.ttf",
+        "textAlignment": "center",
         "verticalTextAlignment": "top",
-        "characterSize": 20,
-        "color": "0;0;0"
+        "characterSize": 80,
+        "color": "255;255;255"
       }
     },
     {
@@ -239,6 +272,66 @@
           "width": 192
         }
       }
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "Curtains",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Credits.jpg",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 1920,
+                        "y": 0
+                      },
+                      {
+                        "x": 1920,
+                        "y": 1080
+                      },
+                      {
+                        "x": 0,
+                        "y": 1080
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
@@ -248,10 +341,13 @@
         "objectName": "CreditsText"
       },
       {
-        "objectName": "NewText"
+        "objectName": "CreditsBigText"
       },
       {
         "objectName": "RedButtonWithShadow"
+      },
+      {
+        "objectName": "Curtains"
       }
     ]
   },
@@ -331,6 +427,10 @@
     }
   ],
   "behaviorsSharedData": [
+    {
+      "name": "Animation",
+      "type": "AnimatableCapability::AnimatableBehavior"
+    },
     {
       "name": "ButtonFSM",
       "type": "ButtonStates::ButtonFSM"
