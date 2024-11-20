@@ -1,8 +1,8 @@
 {
   "b": 209,
   "disableInputWhenNotFocused": true,
-  "mangledName": "Credits",
-  "name": "Credits",
+  "mangledName": "LossScreen",
+  "name": "LossScreen",
   "r": 209,
   "standardSortMethod": true,
   "stopSoundsOnStartup": true,
@@ -26,17 +26,33 @@
   "instances": [
     {
       "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "height": 360,
+      "customSize": false,
+      "height": 0,
       "keepRatio": true,
       "layer": "",
-      "name": "CreditsText",
-      "persistentUuid": "82fc9f19-73f6-4b68-96ec-b092903014d3",
-      "width": 269,
-      "x": 537,
-      "y": 153,
+      "name": "NewText",
+      "persistentUuid": "ab5e7346-b7a1-45a2-ac46-c57f0a4faf4e",
+      "width": 0,
+      "x": 380,
+      "y": 234,
       "zOrder": 1,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 3,
+      "height": 214,
+      "keepRatio": true,
+      "layer": "",
+      "name": "NewSprite",
+      "persistentUuid": "4c7cee0b-37ea-49ba-abc8-28563909ac2e",
+      "width": 214,
+      "x": 558,
+      "y": 410,
+      "zOrder": 2,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -47,17 +63,17 @@
       "assetStoreId": "",
       "bold": false,
       "italic": false,
-      "name": "CreditsText",
+      "name": "NewText",
       "smoothed": true,
       "type": "TextObject::Text",
       "underlined": false,
       "variables": [],
       "effects": [],
       "behaviors": [],
-      "string": "Developed by:\nBhavya Anil\nSamuel Si\nSteven Sung\n\nTODO",
+      "string": "CANCELLED",
       "font": "",
       "textAlignment": "left",
-      "characterSize": 40,
+      "characterSize": 100,
       "color": {
         "b": 0,
         "g": 0,
@@ -77,20 +93,84 @@
         "shadowOpacity": 127,
         "smoothed": true,
         "underlined": false,
-        "text": "Developed by:\nBhavya Anil\nSamuel Si\nSteven Sung\n\nTODO",
+        "text": "CANCELLED",
         "font": "",
         "textAlignment": "left",
         "verticalTextAlignment": "top",
-        "characterSize": 40,
+        "characterSize": 100,
         "color": "0;0;0"
       }
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "NewSprite",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "NewSprite",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "NewSprite8",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 9,
+                        "y": 15
+                      },
+                      {
+                        "x": 56,
+                        "y": 15
+                      },
+                      {
+                        "x": 56,
+                        "y": 55
+                      },
+                      {
+                        "x": 9,
+                        "y": 55
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
     "folderName": "__ROOT",
     "children": [
       {
-        "objectName": "CreditsText"
+        "objectName": "NewText"
+      },
+      {
+        "objectName": "NewSprite"
       }
     ]
   },
@@ -143,12 +223,24 @@
   ],
   "behaviorsSharedData": [
     {
+      "name": "Animation",
+      "type": "AnimatableCapability::AnimatableBehavior"
+    },
+    {
       "name": "Effect",
       "type": "EffectCapability::EffectBehavior"
     },
     {
+      "name": "Flippable",
+      "type": "FlippableCapability::FlippableBehavior"
+    },
+    {
       "name": "Opacity",
       "type": "OpacityCapability::OpacityBehavior"
+    },
+    {
+      "name": "Resizable",
+      "type": "ResizableCapability::ResizableBehavior"
     },
     {
       "name": "Scale",
