@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.546875,
+    "zoomFactor": 0.30104611971824585,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -28,14 +28,14 @@
       "angle": 0,
       "customSize": true,
       "depth": 1,
-      "height": 360,
+      "height": 1064,
       "keepRatio": true,
       "layer": "",
-      "name": "CreditsText",
-      "persistentUuid": "82fc9f19-73f6-4b68-96ec-b092903014d3",
-      "width": 269,
-      "x": 537,
-      "y": 153,
+      "name": "Credit_screen",
+      "persistentUuid": "f0d77e23-d03b-4a58-80f7-c9960c3d2b63",
+      "width": 1923,
+      "x": -339,
+      "y": -114,
       "zOrder": 1,
       "numberProperties": [],
       "stringProperties": [],
@@ -45,52 +45,21 @@
   "objects": [
     {
       "assetStoreId": "",
-      "bold": false,
-      "italic": false,
-      "name": "CreditsText",
-      "smoothed": true,
-      "type": "TextObject::Text",
-      "underlined": false,
+      "height": 15,
+      "name": "Credit_screen",
+      "texture": "credits.jpg",
+      "type": "TiledSpriteObject::TiledSprite",
+      "width": 15,
       "variables": [],
       "effects": [],
-      "behaviors": [],
-      "string": "Developed by:\nBhavya Anil\nSamuel Si\nSteven Sung\n\nTODO",
-      "font": "",
-      "textAlignment": "left",
-      "characterSize": 40,
-      "color": {
-        "b": 0,
-        "g": 0,
-        "r": 0
-      },
-      "content": {
-        "bold": false,
-        "isOutlineEnabled": false,
-        "isShadowEnabled": false,
-        "italic": false,
-        "outlineColor": "255;255;255",
-        "outlineThickness": 2,
-        "shadowAngle": 90,
-        "shadowBlurRadius": 2,
-        "shadowColor": "0;0;0",
-        "shadowDistance": 4,
-        "shadowOpacity": 127,
-        "smoothed": true,
-        "underlined": false,
-        "text": "Developed by:\nBhavya Anil\nSamuel Si\nSteven Sung\n\nTODO",
-        "font": "",
-        "textAlignment": "left",
-        "verticalTextAlignment": "top",
-        "characterSize": 40,
-        "color": "0;0;0"
-      }
+      "behaviors": []
     }
   ],
   "objectsFolderStructure": {
     "folderName": "__ROOT",
     "children": [
       {
-        "objectName": "CreditsText"
+        "objectName": "Credit_screen"
       }
     ]
   },
@@ -151,12 +120,8 @@
       "type": "OpacityCapability::OpacityBehavior"
     },
     {
-      "name": "Scale",
-      "type": "ScalableCapability::ScalableBehavior"
-    },
-    {
-      "name": "Text",
-      "type": "TextContainerCapability::TextContainerBehavior"
+      "name": "Resizable",
+      "type": "ResizableCapability::ResizableBehavior"
     }
   ]
 }

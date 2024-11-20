@@ -1,7 +1,7 @@
 {
   "firstLayout": "Main Menu",
   "gdVersion": {
-    "build": 218,
+    "build": 217,
     "major": 5,
     "minor": 4,
     "revision": 0
@@ -247,6 +247,15 @@
         "kind": "image",
         "metadata": "{\"localFilePath\":\"NewSprite11.png\",\"extension\":\".png\"}",
         "name": "NewSprite11.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "credits.jpg",
+        "kind": "image",
+        "metadata": "",
+        "name": "credits.jpg",
         "smoothed": true,
         "userAdded": false
       }
