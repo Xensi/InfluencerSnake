@@ -1,13 +1,13 @@
 {
-  "b": 209,
+  "b": 114,
   "disableInputWhenNotFocused": true,
   "mangledName": "Credits",
   "name": "Credits",
-  "r": 209,
+  "r": 114,
   "standardSortMethod": true,
   "stopSoundsOnStartup": true,
   "title": "",
-  "v": 209,
+  "v": 114,
   "uiSettings": {
     "grid": false,
     "gridType": "rectangular",
@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.30104611971824585,
+    "zoomFactor": 0.546875,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -28,15 +28,32 @@
       "angle": 0,
       "customSize": true,
       "depth": 1,
-      "height": 1064,
+      "height": 479,
       "keepRatio": true,
       "layer": "",
-      "name": "Credit_screen",
-      "persistentUuid": "f0d77e23-d03b-4a58-80f7-c9960c3d2b63",
-      "width": 1923,
-      "x": -339,
-      "y": -114,
+      "name": "CreditsText",
+      "persistentUuid": "82fc9f19-73f6-4b68-96ec-b092903014d3",
+      "width": 543,
+      "x": 375,
+      "y": 14,
       "zOrder": 1,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 48,
+      "height": 131,
+      "keepRatio": true,
+      "layer": "",
+      "name": "RedButtonWithShadow",
+      "persistentUuid": "32c6e021-8dc8-475e-a375-bcb3444b2491",
+      "width": 307,
+      "x": 484,
+      "y": 549,
+      "zOrder": 2,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -45,25 +62,228 @@
   "objects": [
     {
       "assetStoreId": "",
-      "height": 15,
-      "name": "Credit_screen",
-      "texture": "credits.jpg",
-      "type": "TiledSpriteObject::TiledSprite",
-      "width": 15,
+      "bold": false,
+      "italic": false,
+      "name": "CreditsText",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
       "variables": [],
       "effects": [],
-      "behaviors": []
+      "behaviors": [],
+      "string": "Developed by:\nBhavya Anil\nSamuel Si\nSteven Sung\n\nSprites by Samuel Si\n\nArt by Bhavya Anil\n\nButton Template and Button Behavior from Gdevelop",
+      "font": "",
+      "textAlignment": "left",
+      "characterSize": 40,
+      "color": {
+        "b": 0,
+        "g": 0,
+        "r": 0
+      },
+      "content": {
+        "bold": false,
+        "isOutlineEnabled": false,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "Developed by:\nBhavya Anil\nSamuel Si\nSteven Sung\n\nSprites by Samuel Si\n\nArt by Bhavya Anil\n\nButton Template and Button Behavior from Gdevelop",
+        "font": "",
+        "textAlignment": "left",
+        "verticalTextAlignment": "top",
+        "characterSize": 40,
+        "color": "0;0;0"
+      }
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "NewText",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "Text",
+      "font": "",
+      "textAlignment": "left",
+      "characterSize": 20,
+      "color": {
+        "b": 0,
+        "g": 0,
+        "r": 0
+      },
+      "content": {
+        "bold": false,
+        "isOutlineEnabled": false,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "Text",
+        "font": "",
+        "textAlignment": "left",
+        "verticalTextAlignment": "top",
+        "characterSize": 20,
+        "color": "0;0;0"
+      }
+    },
+    {
+      "assetStoreId": "5faf2b0415c271fa6e747283ed36297a95f04d2b6c477a7b011775fa6fb444ee",
+      "name": "RedButtonWithShadow",
+      "type": "PanelSpriteButton::PanelSpriteButton",
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "isFolded": true,
+          "name": "ButtonFSM",
+          "type": "ButtonStates::ButtonFSM",
+          "ShouldCheckHovering": true,
+          "State": "Idle",
+          "TouchId": 0,
+          "TouchIsInside": false,
+          "MouseIsInside": false,
+          "Index": 2.0247e-320
+        }
+      ],
+      "content": {
+        "LeftPadding": 16,
+        "RightPadding": 16,
+        "PressedLabelOffsetY": 3,
+        "BottomPadding": 32,
+        "TopPadding": 32,
+        "HoveredFadeOutDuration": 0.25
+      },
+      "childrenContent": {
+        "Hovered": {
+          "bottomMargin": 16,
+          "height": 69,
+          "leftMargin": 16,
+          "rightMargin": 16,
+          "texture": "Red Button With Shadow_Hovered.png",
+          "tiled": true,
+          "topMargin": 16,
+          "width": 192
+        },
+        "Idle": {
+          "bottomMargin": 16,
+          "height": 69,
+          "leftMargin": 16,
+          "rightMargin": 16,
+          "texture": "Red Button With Shadow_Idle.png",
+          "tiled": true,
+          "topMargin": 16,
+          "width": 192
+        },
+        "Label": {
+          "bold": false,
+          "italic": false,
+          "smoothed": true,
+          "underlined": false,
+          "string": "Return to main menu",
+          "font": "CantoraOne-Regular.ttf",
+          "textAlignment": "center",
+          "characterSize": 40,
+          "color": {
+            "b": 255,
+            "g": 255,
+            "r": 255
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "Return to main menu",
+            "font": "CantoraOne-Regular.ttf",
+            "textAlignment": "center",
+            "verticalTextAlignment": "top",
+            "characterSize": 40,
+            "color": "255;255;255"
+          }
+        },
+        "Pressed": {
+          "bottomMargin": 16,
+          "height": 69,
+          "leftMargin": 16,
+          "rightMargin": 16,
+          "texture": "Red Button With Shadow_Pressed.png",
+          "tiled": true,
+          "topMargin": 16,
+          "width": 192
+        }
+      }
     }
   ],
   "objectsFolderStructure": {
     "folderName": "__ROOT",
     "children": [
       {
-        "objectName": "Credit_screen"
+        "objectName": "CreditsText"
+      },
+      {
+        "objectName": "NewText"
+      },
+      {
+        "objectName": "RedButtonWithShadow"
       }
     ]
   },
-  "events": [],
+  "events": [
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "ButtonStates::ButtonFSM::IsClicked"
+          },
+          "parameters": [
+            "RedButtonWithShadow",
+            "ButtonFSM",
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "Scene"
+          },
+          "parameters": [
+            "",
+            "\"Main Menu\"",
+            ""
+          ]
+        }
+      ]
+    }
+  ],
   "layers": [
     {
       "ambientLightColorB": 200,
@@ -112,8 +332,16 @@
   ],
   "behaviorsSharedData": [
     {
+      "name": "ButtonFSM",
+      "type": "ButtonStates::ButtonFSM"
+    },
+    {
       "name": "Effect",
       "type": "EffectCapability::EffectBehavior"
+    },
+    {
+      "name": "Flippable",
+      "type": "FlippableCapability::FlippableBehavior"
     },
     {
       "name": "Opacity",
@@ -122,6 +350,14 @@
     {
       "name": "Resizable",
       "type": "ResizableCapability::ResizableBehavior"
+    },
+    {
+      "name": "Scale",
+      "type": "ScalableCapability::ScalableBehavior"
+    },
+    {
+      "name": "Text",
+      "type": "TextContainerCapability::TextContainerBehavior"
     }
   ]
 }

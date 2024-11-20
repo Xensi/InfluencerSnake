@@ -1,8 +1,8 @@
 {
   "b": 209,
   "disableInputWhenNotFocused": true,
-  "mangledName": "LossScreen",
-  "name": "LossScreen",
+  "mangledName": "Cancelled",
+  "name": "Cancelled",
   "r": 209,
   "standardSortMethod": true,
   "stopSoundsOnStartup": true,

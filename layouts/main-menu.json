@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.37971210019479334,
+    "zoomFactor": 0.604083874998887,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -61,15 +61,15 @@
     {
       "angle": 0,
       "customSize": true,
-      "depth": 1,
-      "height": 1057,
+      "depth": 1.0140845070422537,
+      "height": 720,
       "keepRatio": true,
       "layer": "",
       "name": "Title_Screen",
       "persistentUuid": "7e6c4715-3310-4f2d-b392-641a65335b94",
-      "width": 1883,
-      "x": -292,
-      "y": -178,
+      "width": 1294.9859154929582,
+      "x": 0,
+      "y": -2,
       "zOrder": 3,
       "numberProperties": [],
       "stringProperties": [],
@@ -79,15 +79,32 @@
       "angle": 0,
       "customSize": true,
       "depth": 1,
-      "height": 594,
+      "height": 411,
       "keepRatio": true,
       "layer": "",
       "name": "PlayButton",
       "persistentUuid": "03448935-4c23-4bf9-9f97-4eb6e2fb9e04",
-      "width": 481,
-      "x": 359,
-      "y": 82,
+      "width": 323,
+      "x": 445,
+      "y": 184,
       "zOrder": 4,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 48,
+      "height": 56,
+      "keepRatio": true,
+      "layer": "",
+      "name": "RedButtonWithShadow",
+      "persistentUuid": "c2208fcf-b4a6-40b3-9a5c-fec17191d1c1",
+      "width": 162,
+      "x": 900,
+      "y": 342,
+      "zOrder": 5,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -199,14 +216,109 @@
     },
     {
       "assetStoreId": "",
-      "height": 15,
+      "height": 10,
       "name": "Title_Screen",
       "texture": "cmpm 80k graphic.jpg",
       "type": "TiledSpriteObject::TiledSprite",
-      "width": 15,
+      "width": 10,
       "variables": [],
       "effects": [],
       "behaviors": []
+    },
+    {
+      "assetStoreId": "5faf2b0415c271fa6e747283ed36297a95f04d2b6c477a7b011775fa6fb444ee",
+      "name": "RedButtonWithShadow",
+      "type": "PanelSpriteButton::PanelSpriteButton",
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "ButtonFSM",
+          "type": "ButtonStates::ButtonFSM",
+          "ShouldCheckHovering": true,
+          "State": "Idle",
+          "TouchId": 0,
+          "TouchIsInside": false,
+          "MouseIsInside": false,
+          "Index": 2.0247e-320
+        }
+      ],
+      "content": {
+        "LeftPadding": 16,
+        "RightPadding": 16,
+        "PressedLabelOffsetY": 3,
+        "BottomPadding": 32,
+        "TopPadding": 32,
+        "HoveredFadeOutDuration": 0.25
+      },
+      "childrenContent": {
+        "Hovered": {
+          "bottomMargin": 16,
+          "height": 69,
+          "leftMargin": 16,
+          "rightMargin": 16,
+          "texture": "Red Button With Shadow_Hovered.png",
+          "tiled": true,
+          "topMargin": 16,
+          "width": 192
+        },
+        "Idle": {
+          "bottomMargin": 16,
+          "height": 69,
+          "leftMargin": 16,
+          "rightMargin": 16,
+          "texture": "Red Button With Shadow_Idle.png",
+          "tiled": true,
+          "topMargin": 16,
+          "width": 192
+        },
+        "Label": {
+          "bold": false,
+          "italic": false,
+          "smoothed": true,
+          "underlined": false,
+          "string": "Credits",
+          "font": "CantoraOne-Regular.ttf",
+          "textAlignment": "center",
+          "characterSize": 40,
+          "color": {
+            "b": 255,
+            "g": 255,
+            "r": 255
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "Credits",
+            "font": "CantoraOne-Regular.ttf",
+            "textAlignment": "center",
+            "verticalTextAlignment": "top",
+            "characterSize": 40,
+            "color": "255;255;255"
+          }
+        },
+        "Pressed": {
+          "bottomMargin": 16,
+          "height": 69,
+          "leftMargin": 16,
+          "rightMargin": 16,
+          "texture": "Red Button With Shadow_Pressed.png",
+          "tiled": true,
+          "topMargin": 16,
+          "width": 192
+        }
+      }
     }
   ],
   "objectsFolderStructure": {
@@ -220,6 +332,9 @@
       },
       {
         "objectName": "Title_Screen"
+      },
+      {
+        "objectName": "RedButtonWithShadow"
       }
     ]
   },
@@ -256,6 +371,33 @@
           "parameters": [
             "",
             "\"Game\"",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "ButtonStates::ButtonFSM::IsClicked"
+          },
+          "parameters": [
+            "RedButtonWithShadow",
+            "ButtonFSM",
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "Scene"
+          },
+          "parameters": [
+            "",
+            "\"Credits\"",
             ""
           ]
         }
@@ -312,6 +454,10 @@
     {
       "name": "Animation",
       "type": "AnimatableCapability::AnimatableBehavior"
+    },
+    {
+      "name": "ButtonFSM",
+      "type": "ButtonStates::ButtonFSM"
     },
     {
       "name": "Effect",

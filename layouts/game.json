@@ -2142,6 +2142,73 @@
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 23,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Subscribers",
+      "persistentUuid": "a934795a-72ee-4e34-b761-dcb3ca6771d8",
+      "width": 192,
+      "x": 96,
+      "y": 192,
+      "zOrder": 5,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 23,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Likes2",
+      "persistentUuid": "aa4ca32b-d809-4e44-a5e0-045488139442",
+      "width": 128,
+      "x": 96,
+      "y": 160,
+      "zOrder": 6,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 32,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Comments2",
+      "persistentUuid": "82340712-32c5-40bf-b503-b8a77cd373c5",
+      "width": 192,
+      "x": 96,
+      "y": 128,
+      "zOrder": 7,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Dialogue",
+      "persistentUuid": "0d5c816c-9184-4456-a8d5-a5a67fb08e66",
+      "width": 0,
+      "x": 608,
+      "y": -64,
+      "zOrder": 8,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
     }
   ],
   "objects": [
@@ -2272,7 +2339,56 @@
       "behaviors": [],
       "animations": [
         {
-          "name": "Follower",
+          "name": "smile",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "NewSprite11.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 1,
+                        "y": 1
+                      },
+                      {
+                        "x": 64,
+                        "y": 1
+                      },
+                      {
+                        "x": 64,
+                        "y": 64
+                      },
+                      {
+                        "x": 1,
+                        "y": 64
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "bleh",
           "useMultipleDirections": false,
           "directions": [
             {
@@ -2370,7 +2486,7 @@
           ]
         },
         {
-          "name": "smile",
+          "name": "sad",
           "useMultipleDirections": false,
           "directions": [
             {
@@ -2380,7 +2496,154 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "NewSprite11.png",
+                  "image": "Follower5",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 1,
+                        "y": 1
+                      },
+                      {
+                        "x": 64,
+                        "y": 1
+                      },
+                      {
+                        "x": 64,
+                        "y": 64
+                      },
+                      {
+                        "x": 1,
+                        "y": 64
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "angry",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "angry",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 1,
+                        "y": 1
+                      },
+                      {
+                        "x": 64,
+                        "y": 1
+                      },
+                      {
+                        "x": 64,
+                        "y": 64
+                      },
+                      {
+                        "x": 1,
+                        "y": 64
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "dead",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Follower6",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 1,
+                        "y": 1
+                      },
+                      {
+                        "x": 64,
+                        "y": 1
+                      },
+                      {
+                        "x": 64,
+                        "y": 64
+                      },
+                      {
+                        "x": 1,
+                        "y": 64
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "miffed",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Follower7",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -2431,7 +2694,7 @@
       "behaviors": [],
       "animations": [
         {
-          "name": "NewSprite",
+          "name": "like",
           "useMultipleDirections": false,
           "directions": [
             {
@@ -2441,7 +2704,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "NewSprite5",
+                  "image": "NewSprite11",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -2457,20 +2720,68 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 0,
-                        "y": 0
+                        "x": 4,
+                        "y": 4
                       },
                       {
-                        "x": 64,
-                        "y": 0
+                        "x": 60,
+                        "y": 4
                       },
                       {
-                        "x": 64,
-                        "y": 64
+                        "x": 60,
+                        "y": 60
                       },
                       {
-                        "x": 0,
-                        "y": 64
+                        "x": 4,
+                        "y": 60
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "heart",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "NewSprite12.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 4,
+                        "y": 4
+                      },
+                      {
+                        "x": 60,
+                        "y": 4
+                      },
+                      {
+                        "x": 60,
+                        "y": 60
+                      },
+                      {
+                        "x": 4,
+                        "y": 60
                       }
                     ]
                   ]
@@ -2541,6 +2852,174 @@
           ]
         }
       ]
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "Subscribers",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "Subscribers: 0",
+      "font": "",
+      "textAlignment": "left",
+      "characterSize": 20,
+      "color": {
+        "b": 0,
+        "g": 0,
+        "r": 0
+      },
+      "content": {
+        "bold": false,
+        "isOutlineEnabled": false,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "Subscribers: 0",
+        "font": "",
+        "textAlignment": "left",
+        "verticalTextAlignment": "top",
+        "characterSize": 20,
+        "color": "0;0;0"
+      }
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "Likes2",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "Likes: 0",
+      "font": "",
+      "textAlignment": "left",
+      "characterSize": 20,
+      "color": {
+        "b": 0,
+        "g": 0,
+        "r": 0
+      },
+      "content": {
+        "bold": false,
+        "isOutlineEnabled": false,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "Likes: 0",
+        "font": "",
+        "textAlignment": "left",
+        "verticalTextAlignment": "top",
+        "characterSize": 20,
+        "color": "0;0;0"
+      }
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "Comments2",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "Comments: 0",
+      "font": "",
+      "textAlignment": "left",
+      "characterSize": 20,
+      "color": {
+        "b": 0,
+        "g": 0,
+        "r": 0
+      },
+      "content": {
+        "bold": false,
+        "isOutlineEnabled": false,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "Comments: 0",
+        "font": "",
+        "textAlignment": "left",
+        "verticalTextAlignment": "top",
+        "characterSize": 20,
+        "color": "0;0;0"
+      }
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "Dialogue",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "aaaaa",
+      "font": "",
+      "textAlignment": "center",
+      "characterSize": 20,
+      "color": {
+        "b": 0,
+        "g": 0,
+        "r": 0
+      },
+      "content": {
+        "bold": false,
+        "isOutlineEnabled": false,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "aaaaa",
+        "font": "",
+        "textAlignment": "center",
+        "verticalTextAlignment": "top",
+        "characterSize": 20,
+        "color": "0;0;0"
+      }
     }
   ],
   "objectsFolderStructure": {
@@ -2556,7 +3035,19 @@
         "objectName": "Follower"
       },
       {
+        "objectName": "Subscribers"
+      },
+      {
+        "objectName": "Likes2"
+      },
+      {
+        "objectName": "Comments2"
+      },
+      {
         "objectName": "Food"
+      },
+      {
+        "objectName": "Dialogue"
       }
     ]
   },
@@ -2601,6 +3092,29 @@
             "SnakeYDir",
             "=",
             "0"
+          ]
+        },
+        {
+          "type": {
+            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+          },
+          "parameters": [
+            "Dialogue",
+            "Text",
+            "=",
+            "dialogueArray[Score]"
+          ]
+        },
+        {
+          "type": {
+            "value": "MettreXY"
+          },
+          "parameters": [
+            "Dialogue",
+            "=",
+            "SnakeHead.X()",
+            "=",
+            "SnakeHead.Y() -40"
           ]
         }
       ],
@@ -2785,7 +3299,7 @@
             "",
             "\"Tick\"",
             ">=",
-            ".3"
+            "TickLength"
           ]
         },
         {
@@ -2812,7 +3326,6 @@
       ],
       "events": [
         {
-          "folded": true,
           "type": "BuiltinCommonInstructions::ForEachChildVariable",
           "iterableVariableName": "XPositions",
           "valueIteratorVariableName": "child",
@@ -2946,6 +3459,55 @@
                     "=",
                     "YPositions[Index]"
                   ]
+                },
+                {
+                  "type": {
+                    "value": "MettreXY"
+                  },
+                  "parameters": [
+                    "Dialogue",
+                    "=",
+                    "SnakeHead.X()",
+                    "=",
+                    "SnakeHead.Y() -40"
+                  ]
+                }
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "VariableChildCount"
+                      },
+                      "parameters": [
+                        "dialogueArray",
+                        ">",
+                        "Score"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                      },
+                      "parameters": [
+                        "Dialogue",
+                        "Text",
+                        "=",
+                        "dialogueArray[Score]"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "variables": [
+                {
+                  "name": "localDialogue",
+                  "type": "string",
+                  "value": "0"
                 }
               ]
             },
@@ -3052,7 +3614,6 @@
           ]
         },
         {
-          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -3096,6 +3657,17 @@
                     "XPositions[0]",
                     "YPositions[0]",
                     ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "AnimatableCapability::AnimatableBehavior::SetIndex"
+                  },
+                  "parameters": [
+                    "Follower",
+                    "Animation",
+                    "=",
+                    "RandomInRange(0,2)"
                   ]
                 },
                 {
@@ -3192,6 +3764,119 @@
                     "SnakeHeadIndex",
                     "+",
                     "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "Score",
+                    "+",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "TickLength",
+                    "*",
+                    ".99"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "subs",
+                    "+",
+                    "Score*Score"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "Subscribers",
+                    "Text",
+                    "=",
+                    "\"Subscribers: \" + subs"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "Likes",
+                    "+",
+                    "Score*Score*RandomInRange(1,10)"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "Likes2",
+                    "Text",
+                    "=",
+                    "\"Likes: \" + Likes"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "Comments",
+                    "+",
+                    "Score*Score*Score*RandomInRange(1,10)"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "Comments2",
+                    "Text",
+                    "=",
+                    "\"Comments: \" + Comments"
+                  ]
+                }
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "NumberVariable"
+                      },
+                      "parameters": [
+                        "Score",
+                        ">=",
+                        "8"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "AnimatableCapability::AnimatableBehavior::SetIndex"
+                      },
+                      "parameters": [
+                        "Follower",
+                        "Animation",
+                        "=",
+                        "RandomInRange(3,6)"
+                      ]
+                    }
                   ]
                 }
               ]
@@ -3384,7 +4069,7 @@
           },
           "parameters": [
             "",
-            "\"LossScreen\"",
+            "\"Cancelled\"",
             ""
           ]
         }
@@ -3543,6 +4228,10 @@
     {
       "name": "Scale",
       "type": "ScalableCapability::ScalableBehavior"
+    },
+    {
+      "name": "Text",
+      "type": "TextContainerCapability::TextContainerBehavior"
     }
   ]
 }
