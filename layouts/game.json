@@ -2166,7 +2166,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "SnakeHead",
+                  "image": "SnakeHead2",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -2182,20 +2182,20 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 23,
-                        "y": 10
+                        "x": 1,
+                        "y": 1
                       },
                       {
-                        "x": 48,
-                        "y": 10
+                        "x": 64,
+                        "y": 1
                       },
                       {
-                        "x": 48,
-                        "y": 49
+                        "x": 64,
+                        "y": 64
                       },
                       {
-                        "x": 23,
-                        "y": 49
+                        "x": 1,
+                        "y": 64
                       }
                     ]
                   ]
@@ -2231,20 +2231,20 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 23,
-                        "y": 10
+                        "x": 1,
+                        "y": 1
                       },
                       {
-                        "x": 48,
-                        "y": 10
+                        "x": 64,
+                        "y": 1
                       },
                       {
-                        "x": 48,
-                        "y": 49
+                        "x": 64,
+                        "y": 64
                       },
                       {
-                        "x": 23,
-                        "y": 49
+                        "x": 1,
+                        "y": 64
                       }
                     ]
                   ]
@@ -2282,7 +2282,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "Follower",
+                  "image": "Follower2",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -2298,20 +2298,20 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 25,
-                        "y": 11
+                        "x": 1,
+                        "y": 1
                       },
                       {
-                        "x": 44,
-                        "y": 11
+                        "x": 64,
+                        "y": 1
                       },
                       {
-                        "x": 44,
-                        "y": 56
+                        "x": 64,
+                        "y": 64
                       },
                       {
-                        "x": 25,
-                        "y": 56
+                        "x": 1,
+                        "y": 64
                       }
                     ]
                   ]
@@ -2321,7 +2321,7 @@
           ]
         },
         {
-          "name": "NewSprite",
+          "name": "rofl",
           "useMultipleDirections": false,
           "directions": [
             {
@@ -2331,7 +2331,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "NewSprite4",
+                  "image": "Follower3",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -2347,20 +2347,69 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 25,
-                        "y": 11
+                        "x": 1,
+                        "y": 1
                       },
                       {
-                        "x": 44,
-                        "y": 11
+                        "x": 64,
+                        "y": 1
                       },
                       {
-                        "x": 44,
-                        "y": 56
+                        "x": 64,
+                        "y": 64
                       },
                       {
-                        "x": 25,
-                        "y": 56
+                        "x": 1,
+                        "y": 64
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "smile",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "NewSprite11.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 1,
+                        "y": 1
+                      },
+                      {
+                        "x": 64,
+                        "y": 1
+                      },
+                      {
+                        "x": 64,
+                        "y": 64
+                      },
+                      {
+                        "x": 1,
+                        "y": 64
                       }
                     ]
                   ]
