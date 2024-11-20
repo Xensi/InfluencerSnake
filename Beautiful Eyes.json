@@ -137,7 +137,7 @@
         "alwaysLoaded": false,
         "file": "assets/NewSprite7.png",
         "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/NewSprite7.png\"}",
         "name": "NewSprite7",
         "smoothed": true,
         "userAdded": false
@@ -175,6 +175,24 @@
         "kind": "image",
         "metadata": "{\"extension\":\".png\"}",
         "name": "SnakeHead",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "cmpm 80k graphic.jpg",
+        "kind": "image",
+        "metadata": "",
+        "name": "cmpm 80k graphic.jpg",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/NewSprite10.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite10",
         "smoothed": true,
         "userAdded": false
       }

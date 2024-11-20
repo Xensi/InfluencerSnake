@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.546875,
+    "zoomFactor": 0.37971210019479334,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -54,6 +54,40 @@
       "x": 487,
       "y": 361,
       "zOrder": 2,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 1086,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Title_Screen",
+      "persistentUuid": "7e6c4715-3310-4f2d-b392-641a65335b94",
+      "width": 1849,
+      "x": -292,
+      "y": -207,
+      "zOrder": 3,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 594,
+      "keepRatio": true,
+      "layer": "",
+      "name": "PlayButton",
+      "persistentUuid": "03448935-4c23-4bf9-9f97-4eb6e2fb9e04",
+      "width": 467,
+      "x": 370,
+      "y": 66,
+      "zOrder": 4,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -123,7 +157,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "NewSprite7",
+                  "image": "NewSprite10",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -139,7 +173,7 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 15,
+                        "x": 13,
                         "y": 15
                       },
                       {
@@ -151,7 +185,7 @@
                         "y": 46
                       },
                       {
-                        "x": 15,
+                        "x": 13,
                         "y": 46
                       }
                     ]
@@ -162,6 +196,17 @@
           ]
         }
       ]
+    },
+    {
+      "assetStoreId": "",
+      "height": 15,
+      "name": "Title_Screen",
+      "texture": "cmpm 80k graphic.jpg",
+      "type": "TiledSpriteObject::TiledSprite",
+      "width": 15,
+      "variables": [],
+      "effects": [],
+      "behaviors": []
     }
   ],
   "objectsFolderStructure": {
@@ -172,6 +217,9 @@
       },
       {
         "objectName": "PlayButton"
+      },
+      {
+        "objectName": "Title_Screen"
       }
     ]
   },
