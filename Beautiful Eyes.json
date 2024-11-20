@@ -484,6 +484,15 @@
         "name": "Credits.jpg",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Canceled.jpg",
+        "kind": "image",
+        "metadata": "",
+        "name": "Canceled.jpg",
+        "smoothed": true,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
