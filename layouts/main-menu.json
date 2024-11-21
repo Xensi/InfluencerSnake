@@ -427,6 +427,15 @@
       "actions": [
         {
           "type": {
+            "value": "StopMusicCanal"
+          },
+          "parameters": [
+            "",
+            "1"
+          ]
+        },
+        {
+          "type": {
             "value": "Scene"
           },
           "parameters": [
@@ -537,18 +546,28 @@
     },
     {
       "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [],
+      "conditions": [
+        {
+          "type": {
+            "value": "DepartScene"
+          },
+          "parameters": [
+            ""
+          ]
+        }
+      ],
       "actions": [
         {
           "type": {
-            "value": "PlaySound"
+            "value": "PlayMusicCanal"
           },
           "parameters": [
             "",
-            "assets/backgroundmusic.ogg",
+            "backgroundmusic.ogg",
+            "1",
             "yes",
-            "21",
-            "1"
+            "20",
+            ""
           ]
         }
       ]

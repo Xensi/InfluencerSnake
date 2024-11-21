@@ -3128,6 +3128,112 @@
             "20",
             "1"
           ]
+        },
+        {
+          "type": {
+            "value": "SetBooleanVariable"
+          },
+          "parameters": [
+            "GameLoss",
+            "False",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "ClearVariableChildren"
+          },
+          "parameters": [
+            "XPositions"
+          ]
+        },
+        {
+          "type": {
+            "value": "ClearVariableChildren"
+          },
+          "parameters": [
+            "YPositions"
+          ]
+        },
+        {
+          "type": {
+            "value": "PushNumber"
+          },
+          "parameters": [
+            "XPositions",
+            "608"
+          ]
+        },
+        {
+          "type": {
+            "value": "PushNumber"
+          },
+          "parameters": [
+            "YPositions",
+            "256"
+          ]
+        },
+        {
+          "type": {
+            "value": "MettreXY"
+          },
+          "parameters": [
+            "SnakeHead",
+            "=",
+            "XPositions[0]",
+            "=",
+            "YPositions[0]"
+          ]
+        },
+        {
+          "type": {
+            "value": "SetStringVariable"
+          },
+          "parameters": [
+            "DesiredDir",
+            "=",
+            "\"right\""
+          ]
+        },
+        {
+          "type": {
+            "value": "SetNumberVariable"
+          },
+          "parameters": [
+            "SnakeHeadIndex",
+            "=",
+            "0"
+          ]
+        },
+        {
+          "type": {
+            "value": "SetNumberVariable"
+          },
+          "parameters": [
+            "subs",
+            "=",
+            "0"
+          ]
+        },
+        {
+          "type": {
+            "value": "SetNumberVariable"
+          },
+          "parameters": [
+            "Likes",
+            "=",
+            "0"
+          ]
+        },
+        {
+          "type": {
+            "value": "SetNumberVariable"
+          },
+          "parameters": [
+            "Comments",
+            "=",
+            "0"
+          ]
         }
       ],
       "events": [
