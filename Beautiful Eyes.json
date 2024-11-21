@@ -633,6 +633,16 @@
         "preloadAsSound": false,
         "preloadInCache": false,
         "userAdded": false
+      },
+      {
+        "file": "qubodup-crash.ogg",
+        "kind": "audio",
+        "metadata": "",
+        "name": "qubodup-crash.ogg",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
