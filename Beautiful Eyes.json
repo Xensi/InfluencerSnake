@@ -1,7 +1,7 @@
 {
-  "firstLayout": "",
+  "firstLayout": "Main Menu",
   "gdVersion": {
-    "build": 217,
+    "build": 218,
     "major": 5,
     "minor": 4,
     "revision": 0
@@ -29,7 +29,35 @@
     "maxFPS": 60,
     "minFPS": 20,
     "verticalSync": false,
-    "platformSpecificAssets": {},
+    "platformSpecificAssets": {
+      "android-icon-144": "",
+      "android-icon-192": "",
+      "android-icon-36": "",
+      "android-icon-48": "",
+      "android-icon-72": "",
+      "android-icon-96": "",
+      "android-windowSplashScreenAnimatedIcon": "",
+      "desktop-icon-512": "",
+      "ios-icon-100": "",
+      "ios-icon-1024": "",
+      "ios-icon-114": "",
+      "ios-icon-120": "",
+      "ios-icon-144": "",
+      "ios-icon-152": "",
+      "ios-icon-167": "",
+      "ios-icon-180": "",
+      "ios-icon-20": "",
+      "ios-icon-29": "",
+      "ios-icon-40": "",
+      "ios-icon-50": "",
+      "ios-icon-57": "",
+      "ios-icon-58": "",
+      "ios-icon-60": "",
+      "ios-icon-72": "",
+      "ios-icon-76": "",
+      "ios-icon-80": "",
+      "ios-icon-87": ""
+    },
     "loadingScreen": {
       "backgroundColor": 0,
       "backgroundFadeInDuration": 0.2,
@@ -97,7 +125,7 @@
         "alwaysLoaded": false,
         "file": "assets/NewSprite4.png",
         "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/NewSprite4.png\"}",
         "name": "NewSprite4",
         "smoothed": true,
         "userAdded": false
@@ -132,6 +160,399 @@
           "identifier": "https://asset-resources.gdevelop.io/public-resources/Particles/PixiJS/c693a024a868728da3e9e91c9d23513306582bda6ba10191afc24d6c5667dd5e_Explosion1.png",
           "name": "Explosion1.png"
         }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/NewSprite7.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/NewSprite7.png\"}",
+        "name": "NewSprite7",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/NewSprite8.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite8",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/NewSprite9.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite9",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Follower.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Follower",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/SnakeHead.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "SnakeHead",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "cmpm 80k graphic.jpg",
+        "kind": "image",
+        "metadata": "",
+        "name": "cmpm 80k graphic.jpg",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/NewSprite10.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite10",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/SnakeHead2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "SnakeHead2",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Follower2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/Follower2.png\"}",
+        "name": "Follower2",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Follower3.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Follower3",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Follower4.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Follower4",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "../../../Downloads/Follower3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "..\\..\\..\\Downloads\\Follower3.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "NewSprite11.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"NewSprite11.png\",\"extension\":\".png\"}",
+        "name": "NewSprite11.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Follower5.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Follower5",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/angry.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "angry",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Follower6.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Follower6",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Follower7.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Follower7",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/NewSprite11.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite11",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "NewSprite12.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "NewSprite12.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Red Button With Shadow_Hovered.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Red Button With Shadow_Hovered.png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/71ee2c8d8b72808c7f084252cd36c80c44bc07655a3729e5fe7459c634007e8a_Red Button With Shadow_Hovered.png",
+          "name": "Red Button With Shadow_Hovered.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Red Button With Shadow_Idle.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Red Button With Shadow_Idle.png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/6c6bf020fb86d99a9ecc993f8b90064d73d757bc2408050cf353c84bc36f6be2_Red Button With Shadow_Idle.png",
+          "name": "Red Button With Shadow_Idle.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Red Button With Shadow_Pressed.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Red Button With Shadow_Pressed.png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/b9ce526450d48adedb6875043465ae168fff1f6b01dd1ff7f43b7e7c1568cc21_Red Button With Shadow_Pressed.png",
+          "name": "Red Button With Shadow_Pressed.png"
+        }
+      },
+      {
+        "file": "assets/CantoraOne-Regular.ttf",
+        "kind": "font",
+        "metadata": "",
+        "name": "CantoraOne-Regular.ttf",
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/05b0c1364a92b436b86ca819e66b63480d1bc2fb399f6c0cf8bffbf8199ccc2a_CantoraOne-Regular.ttf",
+          "name": "CantoraOne-Regular.ttf"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "credits2.jpg",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"credits2.jpg\",\"extension\":\".png\",\"pskl\":{}}",
+        "name": "credits2.jpg",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/NewSprite12.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite12",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/NewSprite13.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite13",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/credits_page.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "credits_page",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/credits_page2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/credits_page2.png\"}",
+        "name": "credits_page2",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/OpenSans-Italic-VariableFont_wdth,wght.ttf",
+        "kind": "font",
+        "metadata": "",
+        "name": "8c4544654743d56682bd6d16e092a9a29da45d2a6b35e810d9d3b73217492df9_OpenSans-Italic-VariableFont_wdth,wght.ttf",
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Open Font License/8c4544654743d56682bd6d16e092a9a29da45d2a6b35e810d9d3b73217492df9_OpenSans-Italic-VariableFont_wdth,wght.ttf",
+          "name": "gdevelop-asset-store"
+        }
+      },
+      {
+        "file": "assets/NotoSansJP-Light.ttf",
+        "kind": "font",
+        "metadata": "",
+        "name": "19d8a6191c340d758d5aff8b2f70d68f629cc6aaa735e7c38c8f3ea30981d73f_NotoSansJP-Light.ttf",
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Open Font License/Japanese/19d8a6191c340d758d5aff8b2f70d68f629cc6aaa735e7c38c8f3ea30981d73f_NotoSansJP-Light.ttf",
+          "name": "gdevelop-asset-store"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "credits2_inPixio.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "credits2_inPixio.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "credits2_inPixio (1).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "credits2_inPixio (1).png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "credits2_inPixio2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "credits2_inPixio2.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Credits.jpg",
+        "kind": "image",
+        "metadata": "",
+        "name": "Credits.jpg",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Canceled.jpg",
+        "kind": "image",
+        "metadata": "",
+        "name": "Canceled.jpg",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "backgroundmusic2.ogg",
+        "kind": "audio",
+        "metadata": "",
+        "name": "backgroundmusic2.ogg",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "qubodup-crash2.ogg",
+        "kind": "audio",
+        "metadata": "",
+        "name": "qubodup-crash2.ogg",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "applause3.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "applause3.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "Jesús Lastra - Heatstroke.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "Jesús Lastra - Heatstroke.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "game_music.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "game_music.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "qubodup-crash3.ogg",
+        "kind": "audio",
+        "metadata": "",
+        "name": "qubodup-crash3.ogg",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -216,16 +637,135 @@
       "name": "YCorner",
       "type": "number",
       "value": 672
+    },
+    {
+      "name": "Score",
+      "type": "number",
+      "value": 0
+    },
+    {
+      "name": "TickLength",
+      "type": "number",
+      "value": 0.3
+    },
+    {
+      "name": "subs",
+      "type": "number",
+      "value": 0
+    },
+    {
+      "name": "Likes",
+      "type": "number",
+      "value": 0
+    },
+    {
+      "name": "Comments",
+      "type": "number",
+      "value": 0
+    },
+    {
+      "name": "dialogueArray",
+      "type": "array",
+      "children": [
+        {
+          "type": "string",
+          "value": " "
+        },
+        {
+          "type": "string",
+          "value": "hope people like my first video"
+        },
+        {
+          "type": "string",
+          "value": "hey guys, its ya boy"
+        },
+        {
+          "type": "string",
+          "value": "welcome to my youtube channel"
+        },
+        {
+          "type": "string",
+          "value": "what's up guys"
+        },
+        {
+          "type": "string",
+          "value": "number go up!!"
+        },
+        {
+          "type": "string",
+          "value": "90% of you guys aren't subscribed"
+        },
+        {
+          "type": "string",
+          "value": "this game is SO SCARY"
+        },
+        {
+          "type": "string",
+          "value": "ten people compete for 1000 dollars!!"
+        },
+        {
+          "type": "string",
+          "value": "regarding these allegations ..."
+        },
+        {
+          "type": "string",
+          "value": "i did not do that"
+        },
+        {
+          "type": "string",
+          "value": "i just need more subscribers."
+        },
+        {
+          "type": "string",
+          "value": "don't forget TO RING THAT BELL!"
+        },
+        {
+          "type": "string",
+          "value": "it's not slop it's content"
+        },
+        {
+          "type": "string",
+          "value": "Mr East EXPOSED"
+        },
+        {
+          "type": "string",
+          "value": "LIKE AND SUBSCRIBE AND LIKE AND SUBSCRIBE AND"
+        }
+      ]
     }
   ],
   "layouts": [
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/layouts/untitled-scene"
+      "referenceTo": "/layouts/main-menu"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/game"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/credits"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/cancelled"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/staleending"
     }
   ],
   "externalEvents": [],
   "eventsFunctionsExtensions": [
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/buttonstates"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/panelspritebutton"
+    },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/eventsFunctionsExtensions/arraytools"
