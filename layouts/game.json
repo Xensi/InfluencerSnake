@@ -3119,108 +3119,14 @@
         },
         {
           "type": {
-            "value": "ClearVariableChildren"
+            "value": "PlayMusic"
           },
           "parameters": [
-            "XPositions"
-          ]
-        },
-        {
-          "type": {
-            "value": "ClearVariableChildren"
-          },
-          "parameters": [
-            "YPositions"
-          ]
-        },
-        {
-          "type": {
-            "value": "PushNumber"
-          },
-          "parameters": [
-            "XPositions",
-            "608"
-          ]
-        },
-        {
-          "type": {
-            "value": "PushNumber"
-          },
-          "parameters": [
-            "YPositions",
-            "256"
-          ]
-        },
-        {
-          "type": {
-            "value": "MettreXY"
-          },
-          "parameters": [
-            "SnakeHead",
-            "=",
-            "XPositions[0]",
-            "=",
-            "YPositions[0]"
-          ]
-        },
-        {
-          "type": {
-            "value": "SetBooleanVariable"
-          },
-          "parameters": [
-            "GameLoss",
-            "False",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "SetNumberVariable"
-          },
-          "parameters": [
-            "SnakeHeadIndex",
-            "=",
-            "0"
-          ]
-        },
-        {
-          "type": {
-            "value": "SetNumberVariable"
-          },
-          "parameters": [
-            "Score",
-            "=",
-            "0"
-          ]
-        },
-        {
-          "type": {
-            "value": "SetNumberVariable"
-          },
-          "parameters": [
-            "subs",
-            "=",
-            "0"
-          ]
-        },
-        {
-          "type": {
-            "value": "SetNumberVariable"
-          },
-          "parameters": [
-            "Comments",
-            "=",
-            "0"
-          ]
-        },
-        {
-          "type": {
-            "value": "SetNumberVariable"
-          },
-          "parameters": [
-            "Likes",
-            "=",
-            "0"
+            "",
+            "game_music.wav",
+            "yes",
+            "20",
+            "1"
           ]
         }
       ],
@@ -3899,7 +3805,7 @@
                   "parameters": [
                     "subs",
                     "+",
-                    "Score*Score*RandomInRange(1,10)"
+                    "Score*Score"
                   ]
                 },
                 {
@@ -3920,7 +3826,7 @@
                   "parameters": [
                     "Likes",
                     "+",
-                    "Score*Score*RandomInRange(10,100)"
+                    "Score*Score*RandomInRange(1,10)"
                   ]
                 },
                 {
@@ -3953,6 +3859,18 @@
                     "Text",
                     "=",
                     "\"Comments: \" + Comments"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySound"
+                  },
+                  "parameters": [
+                    "",
+                    "qubodup-crash2.ogg",
+                    "",
+                    "100",
+                    "1"
                   ]
                 }
               ],
@@ -4262,6 +4180,42 @@
           "value": 0
         }
       ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "CollisionNP"
+          },
+          "parameters": [
+            "SnakeHead",
+            "Border",
+            "",
+            "",
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "PlaySound"
+          },
+          "parameters": [
+            "",
+            "applause.wav",
+            "",
+            "100",
+            "1"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [],
+      "actions": []
     }
   ],
   "layers": [
