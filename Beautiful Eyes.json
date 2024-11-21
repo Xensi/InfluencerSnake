@@ -495,6 +495,7 @@
         "userAdded": false
       },
       {
+<<<<<<< Updated upstream
         "file": "backgroundmusic2.ogg",
         "kind": "audio",
         "metadata": "",
@@ -553,6 +554,45 @@
         "preloadAsSound": false,
         "preloadInCache": false,
         "userAdded": false
+=======
+        "alwaysLoaded": false,
+        "file": "assets/Grey Button With Shadow_Hovered.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Grey Button With Shadow_Hovered.png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/eb4edad2c3c752116fd28898f6bf0ae8dd0ab73b5cca111dbbd1e541c92dc393_Grey Button With Shadow_Hovered.png",
+          "name": "Grey Button With Shadow_Hovered.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Grey Button With Shadow_Idle.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Grey Button With Shadow_Idle.png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/7a8f60c5db6936e591235ae6ef3eca1c856c61adcc8d2a059e4e408804ebc477_Grey Button With Shadow_Idle.png",
+          "name": "Grey Button With Shadow_Idle.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Grey Button With Shadow_Pressed.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Grey Button With Shadow_Pressed.png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/907400b52ad729d17d819ce65fcedcc7819a07bbf18d106029ef4e7fbfb14d42_Grey Button With Shadow_Pressed.png",
+          "name": "Grey Button With Shadow_Pressed.png"
+        }
+>>>>>>> Stashed changes
       }
     ],
     "resourceFolders": []
@@ -664,6 +704,10 @@
       "value": 0
     },
     {
+<<<<<<< Updated upstream
+=======
+      "folded": true,
+>>>>>>> Stashed changes
       "name": "dialogueArray",
       "type": "array",
       "children": [
