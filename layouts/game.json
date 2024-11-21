@@ -3116,6 +3116,112 @@
             "=",
             "SnakeHead.Y() -40"
           ]
+        },
+        {
+          "type": {
+            "value": "ClearVariableChildren"
+          },
+          "parameters": [
+            "XPositions"
+          ]
+        },
+        {
+          "type": {
+            "value": "ClearVariableChildren"
+          },
+          "parameters": [
+            "YPositions"
+          ]
+        },
+        {
+          "type": {
+            "value": "PushNumber"
+          },
+          "parameters": [
+            "XPositions",
+            "608"
+          ]
+        },
+        {
+          "type": {
+            "value": "PushNumber"
+          },
+          "parameters": [
+            "YPositions",
+            "256"
+          ]
+        },
+        {
+          "type": {
+            "value": "MettreXY"
+          },
+          "parameters": [
+            "SnakeHead",
+            "=",
+            "XPositions[0]",
+            "=",
+            "YPositions[0]"
+          ]
+        },
+        {
+          "type": {
+            "value": "SetBooleanVariable"
+          },
+          "parameters": [
+            "GameLoss",
+            "False",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "SetNumberVariable"
+          },
+          "parameters": [
+            "SnakeHeadIndex",
+            "=",
+            "0"
+          ]
+        },
+        {
+          "type": {
+            "value": "SetNumberVariable"
+          },
+          "parameters": [
+            "Score",
+            "=",
+            "0"
+          ]
+        },
+        {
+          "type": {
+            "value": "SetNumberVariable"
+          },
+          "parameters": [
+            "subs",
+            "=",
+            "0"
+          ]
+        },
+        {
+          "type": {
+            "value": "SetNumberVariable"
+          },
+          "parameters": [
+            "Comments",
+            "=",
+            "0"
+          ]
+        },
+        {
+          "type": {
+            "value": "SetNumberVariable"
+          },
+          "parameters": [
+            "Likes",
+            "=",
+            "0"
+          ]
         }
       ],
       "events": [
@@ -3793,7 +3899,7 @@
                   "parameters": [
                     "subs",
                     "+",
-                    "Score*Score"
+                    "Score*Score*RandomInRange(1,10)"
                   ]
                 },
                 {
@@ -3814,7 +3920,7 @@
                   "parameters": [
                     "Likes",
                     "+",
-                    "Score*Score*RandomInRange(1,10)"
+                    "Score*Score*RandomInRange(10,100)"
                   ]
                 },
                 {
