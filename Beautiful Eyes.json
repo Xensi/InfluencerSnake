@@ -495,66 +495,6 @@
         "userAdded": false
       },
       {
-<<<<<<< Updated upstream
-        "file": "backgroundmusic2.ogg",
-        "kind": "audio",
-        "metadata": "",
-        "name": "backgroundmusic2.ogg",
-        "preloadAsMusic": false,
-        "preloadAsSound": false,
-        "preloadInCache": false,
-        "userAdded": false
-      },
-      {
-        "file": "qubodup-crash2.ogg",
-        "kind": "audio",
-        "metadata": "",
-        "name": "qubodup-crash2.ogg",
-        "preloadAsMusic": false,
-        "preloadAsSound": false,
-        "preloadInCache": false,
-        "userAdded": false
-      },
-      {
-        "file": "applause3.wav",
-        "kind": "audio",
-        "metadata": "",
-        "name": "applause3.wav",
-        "preloadAsMusic": false,
-        "preloadAsSound": false,
-        "preloadInCache": false,
-        "userAdded": false
-      },
-      {
-        "file": "Jesús Lastra - Heatstroke.mp3",
-        "kind": "audio",
-        "metadata": "",
-        "name": "Jesús Lastra - Heatstroke.mp3",
-        "preloadAsMusic": false,
-        "preloadAsSound": false,
-        "preloadInCache": false,
-        "userAdded": false
-      },
-      {
-        "file": "game_music.wav",
-        "kind": "audio",
-        "metadata": "",
-        "name": "game_music.wav",
-        "preloadAsMusic": false,
-        "preloadAsSound": false,
-        "preloadInCache": false,
-        "userAdded": false
-      },
-      {
-        "file": "qubodup-crash3.ogg",
-        "kind": "audio",
-        "metadata": "",
-        "name": "qubodup-crash3.ogg",
-        "preloadAsMusic": false,
-        "preloadAsSound": false,
-        "preloadInCache": false,
-        "userAdded": false
-=======
         "alwaysLoaded": false,
         "file": "assets/Grey Button With Shadow_Hovered.png",
         "kind": "image",
@@ -592,7 +532,6 @@
           "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/907400b52ad729d17d819ce65fcedcc7819a07bbf18d106029ef4e7fbfb14d42_Grey Button With Shadow_Pressed.png",
           "name": "Grey Button With Shadow_Pressed.png"
         }
->>>>>>> Stashed changes
       }
     ],
     "resourceFolders": []
@@ -704,10 +643,7 @@
       "value": 0
     },
     {
-<<<<<<< Updated upstream
-=======
       "folded": true,
->>>>>>> Stashed changes
       "name": "dialogueArray",
       "type": "array",
       "children": [

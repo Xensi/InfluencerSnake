@@ -3115,8 +3115,6 @@
             "SnakeHead.X()",
             "=",
             "SnakeHead.Y() -40"
-<<<<<<< Updated upstream
-=======
           ]
         },
         {
@@ -3223,7 +3221,6 @@
             "Likes",
             "=",
             "0"
->>>>>>> Stashed changes
           ]
         }
       ],
@@ -3902,11 +3899,7 @@
                   "parameters": [
                     "subs",
                     "+",
-<<<<<<< Updated upstream
-                    "Score*Score"
-=======
                     "Score*Score*RandomInRange(1,10)"
->>>>>>> Stashed changes
                   ]
                 },
                 {
@@ -3927,11 +3920,7 @@
                   "parameters": [
                     "Likes",
                     "+",
-<<<<<<< Updated upstream
-                    "Score*Score*RandomInRange(1,10)"
-=======
                     "Score*Score*RandomInRange(10,100)"
->>>>>>> Stashed changes
                   ]
                 },
                 {
@@ -3965,21 +3954,6 @@
                     "=",
                     "\"Comments: \" + Comments"
                   ]
-<<<<<<< Updated upstream
-                },
-                {
-                  "type": {
-                    "value": "PlaySound"
-                  },
-                  "parameters": [
-                    "",
-                    "qubodup-crash3.ogg",
-                    "",
-                    "100",
-                    "1"
-                  ]
-=======
->>>>>>> Stashed changes
                 }
               ],
               "events": [
@@ -4288,60 +4262,6 @@
           "value": 0
         }
       ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [],
-      "actions": [
-        {
-          "type": {
-            "value": "PlaySound"
-          },
-          "parameters": [
-            "",
-            "game_music.wav",
-            "yes",
-            "5",
-            "1"
-          ]
-        }
-      ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "value": "CollisionNP"
-          },
-          "parameters": [
-            "SnakeHead",
-            "Border",
-            "",
-            "",
-            ""
-          ]
-        }
-      ],
-      "actions": [
-        {
-          "type": {
-            "value": "PlaySound"
-          },
-          "parameters": [
-            "",
-            "applause3.wav",
-            "",
-            "50",
-            "1"
-          ]
-        }
-      ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [],
-      "actions": []
     }
   ],
   "layers": [

@@ -534,32 +534,6 @@
           ]
         }
       ]
-<<<<<<< Updated upstream
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [],
-      "actions": [
-        {
-          "type": {
-            "value": "PlaySound"
-          },
-          "parameters": [
-            "",
-            "backgroundmusic2.ogg",
-            "yes",
-            "21",
-            "1"
-          ]
-        }
-      ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [],
-      "actions": []
-=======
->>>>>>> Stashed changes
     }
   ],
   "layers": [

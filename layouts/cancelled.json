@@ -18,11 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-<<<<<<< Updated upstream
-    "zoomFactor": 0.2912258866911113,
-=======
     "zoomFactor": 0.5843784410740929,
->>>>>>> Stashed changes
     "windowMask": false
   },
   "objectsGroups": [],
@@ -77,8 +73,6 @@
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
-<<<<<<< Updated upstream
-=======
     },
     {
       "angle": 0,
@@ -95,7 +89,6 @@
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
->>>>>>> Stashed changes
     }
   ],
   "objects": [
@@ -261,8 +254,6 @@
           ]
         }
       ]
-<<<<<<< Updated upstream
-=======
     },
     {
       "assetStoreId": "5faf2b0415c271fa6e747283ed36297a95f04d2b6c477a7b011775fa6fb444ee",
@@ -442,7 +433,6 @@
           "width": 192
         }
       }
->>>>>>> Stashed changes
     }
   ],
   "objectsFolderStructure": {
@@ -456,12 +446,6 @@
       },
       {
         "objectName": "Canceled"
-<<<<<<< Updated upstream
-      }
-    ]
-  },
-  "events": [],
-=======
       },
       {
         "objectName": "RedButtonWithShadow"
@@ -500,7 +484,6 @@
       ]
     }
   ],
->>>>>>> Stashed changes
   "layers": [
     {
       "ambientLightColorB": 200,
@@ -553,13 +536,10 @@
       "type": "AnimatableCapability::AnimatableBehavior"
     },
     {
-<<<<<<< Updated upstream
-=======
       "name": "ButtonFSM",
       "type": "ButtonStates::ButtonFSM"
     },
     {
->>>>>>> Stashed changes
       "name": "Effect",
       "type": "EffectCapability::EffectBehavior"
     },
