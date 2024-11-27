@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 0.787629010167376,
+    "zoomFactor": 0.8993607583666625,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -2220,7 +2220,14 @@
       "updateIfNotVisible": false,
       "variables": [],
       "effects": [],
-      "behaviors": [],
+      "behaviors": [
+        {
+          "name": "ShakeObject_PositionAngleScale",
+          "type": "ShakeObject::ShakeObject_PositionAngleScale",
+          "Scale": "Scale",
+          "Property": 2.143215748875e-312
+        }
+      ],
       "animations": [
         {
           "name": "SnakeHead",
@@ -2336,7 +2343,14 @@
         }
       ],
       "effects": [],
-      "behaviors": [],
+      "behaviors": [
+        {
+          "name": "ShakeObject_PositionAngleScale",
+          "type": "ShakeObject::ShakeObject_PositionAngleScale",
+          "Scale": "Scale",
+          "Property": 1.877083525172451e-308
+        }
+      ],
       "animations": [
         {
           "name": "smile",
@@ -3569,6 +3583,23 @@
                     "=",
                     "YPositions[Index]"
                   ]
+                },
+                {
+                  "type": {
+                    "value": "ShakeObject::ShakeObject_PositionAngleScale::ShakeObject_PositionAngleScale"
+                  },
+                  "parameters": [
+                    "Follower",
+                    "ShakeObject_PositionAngleScale",
+                    "TickLength",
+                    "0",
+                    "0",
+                    "RandomInRange(10,25)",
+                    "RandomInRange(0,5)",
+                    "0",
+                    "",
+                    ""
+                  ]
                 }
               ]
             },
@@ -3629,6 +3660,23 @@
                     "SnakeHead.X()",
                     "=",
                     "SnakeHead.Y() -40"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ShakeObject::ShakeObject_PositionAngleScale::ShakeObject_PositionAngleScale"
+                  },
+                  "parameters": [
+                    "SnakeHead",
+                    "ShakeObject_PositionAngleScale",
+                    "TickLength",
+                    "0",
+                    "0",
+                    "25",
+                    "5",
+                    "0",
+                    "",
+                    ""
                   ]
                 }
               ],
@@ -3716,7 +3764,7 @@
                   "parameters": [
                     "Follower",
                     "SnakeHead",
-                    "0",
+                    "CellWidth/2",
                     ""
                   ]
                 }
@@ -3752,7 +3800,7 @@
                   "parameters": [
                     "Border",
                     "SnakeHead",
-                    "0",
+                    "CellWidth/2",
                     ""
                   ]
                 }
@@ -3782,7 +3830,7 @@
               "parameters": [
                 "SnakeHead",
                 "Food",
-                "0",
+                "CellWidth/2",
                 ""
               ]
             }
@@ -4045,7 +4093,7 @@
                         "Follower",
                         "Animation",
                         "=",
-                        "RandomInRange(3,6)"
+                        "RandomInRange(0,6)"
                       ]
                     }
                   ]
@@ -4327,6 +4375,279 @@
           "value": 0
         }
       ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "KeyPressed"
+          },
+          "parameters": [
+            "",
+            "Space"
+          ]
+        },
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::Once"
+          },
+          "parameters": []
+        }
+      ],
+      "actions": [],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "Follower",
+                "XPositions[0]",
+                "YPositions[0]",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetIndex"
+              },
+              "parameters": [
+                "Follower",
+                "Animation",
+                "=",
+                "RandomInRange(0,2)"
+              ]
+            },
+            {
+              "type": {
+                "value": "ChangePlan"
+              },
+              "parameters": [
+                "Follower",
+                "=",
+                "-100"
+              ]
+            },
+            {
+              "type": {
+                "value": "ScalableCapability::ScalableBehavior::SetValue"
+              },
+              "parameters": [
+                "Follower",
+                "Scale",
+                "=",
+                ".5"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberObjectVariable"
+              },
+              "parameters": [
+                "Follower",
+                "InstanceIndex",
+                "=",
+                "FollowerIndex"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "NewPos",
+                "=",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "ArrayTools::GlobalInsertAt"
+              },
+              "parameters": [
+                "",
+                "XPositions",
+                "0",
+                "NewPos",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "NewPos",
+                "=",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "ArrayTools::GlobalInsertAt"
+              },
+              "parameters": [
+                "",
+                "YPositions",
+                "0",
+                "NewPos",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "FollowerIndex",
+                "+",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "SnakeHeadIndex",
+                "+",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "Score",
+                "+",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "TickLength",
+                "*",
+                ".99"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "subs",
+                "+",
+                "Score*Score"
+              ]
+            },
+            {
+              "type": {
+                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+              },
+              "parameters": [
+                "Subscribers",
+                "Text",
+                "=",
+                "\"Subscribers: \" + subs"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "Likes",
+                "+",
+                "Score*Score*RandomInRange(1,10)"
+              ]
+            },
+            {
+              "type": {
+                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+              },
+              "parameters": [
+                "Likes2",
+                "Text",
+                "=",
+                "\"Likes: \" + Likes"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "Comments",
+                "+",
+                "Score*Score*Score*RandomInRange(1,10)"
+              ]
+            },
+            {
+              "type": {
+                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+              },
+              "parameters": [
+                "Comments2",
+                "Text",
+                "=",
+                "\"Comments: \" + Comments"
+              ]
+            },
+            {
+              "type": {
+                "value": "PlaySound"
+              },
+              "parameters": [
+                "",
+                "applause.wav",
+                "",
+                "100",
+                "1"
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "Score",
+                    ">=",
+                    "8"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "AnimatableCapability::AnimatableBehavior::SetIndex"
+                  },
+                  "parameters": [
+                    "Follower",
+                    "Animation",
+                    "=",
+                    "RandomInRange(0,6)"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "layers": [
@@ -4399,6 +4720,10 @@
     {
       "name": "Scale",
       "type": "ScalableCapability::ScalableBehavior"
+    },
+    {
+      "name": "ShakeObject_PositionAngleScale",
+      "type": "ShakeObject::ShakeObject_PositionAngleScale"
     },
     {
       "name": "Text",
