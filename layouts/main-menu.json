@@ -96,14 +96,14 @@
       "angle": 0,
       "customSize": true,
       "depth": 48,
-      "height": 56,
+      "height": 34,
       "keepRatio": true,
       "layer": "",
       "name": "RedButtonWithShadow",
       "persistentUuid": "c2208fcf-b4a6-40b3-9a5c-fec17191d1c1",
-      "width": 162,
-      "x": 838,
-      "y": 345,
+      "width": 135,
+      "x": 532,
+      "y": 677,
       "zOrder": 5,
       "numberProperties": [],
       "stringProperties": [],
@@ -121,6 +121,23 @@
       "x": 532,
       "y": 312,
       "zOrder": 6,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 26,
+      "keepRatio": true,
+      "layer": "",
+      "name": "PlayerControls",
+      "persistentUuid": "79c7ab82-d603-4893-b642-f9d995566dad",
+      "width": 211,
+      "x": 205,
+      "y": 345,
+      "zOrder": 7,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -296,7 +313,7 @@
           "string": "Credits",
           "font": "CantoraOne-Regular.ttf",
           "textAlignment": "center",
-          "characterSize": 40,
+          "characterSize": 20,
           "color": {
             "b": 255,
             "g": 255,
@@ -320,7 +337,7 @@
             "font": "CantoraOne-Regular.ttf",
             "textAlignment": "center",
             "verticalTextAlignment": "top",
-            "characterSize": 40,
+            "characterSize": 20,
             "color": "255;255;255"
           }
         },
@@ -347,7 +364,7 @@
       "variables": [],
       "effects": [],
       "behaviors": [],
-      "string": "Click to start!",
+      "string": "Click to start",
       "font": "19d8a6191c340d758d5aff8b2f70d68f629cc6aaa735e7c38c8f3ea30981d73f_NotoSansJP-Light.ttf",
       "textAlignment": "left",
       "characterSize": 15,
@@ -370,11 +387,53 @@
         "shadowOpacity": 127,
         "smoothed": true,
         "underlined": false,
-        "text": "Click to start!",
+        "text": "Click to start",
         "font": "19d8a6191c340d758d5aff8b2f70d68f629cc6aaa735e7c38c8f3ea30981d73f_NotoSansJP-Light.ttf",
         "textAlignment": "left",
         "verticalTextAlignment": "top",
         "characterSize": 15,
+        "color": "0;0;0"
+      }
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "PlayerControls",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "Please use WASD keys to move around!",
+      "font": "19d8a6191c340d758d5aff8b2f70d68f629cc6aaa735e7c38c8f3ea30981d73f_NotoSansJP-Light.ttf",
+      "textAlignment": "left",
+      "characterSize": 20,
+      "color": {
+        "b": 0,
+        "g": 0,
+        "r": 0
+      },
+      "content": {
+        "bold": false,
+        "isOutlineEnabled": false,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "Please use WASD keys to move around!",
+        "font": "19d8a6191c340d758d5aff8b2f70d68f629cc6aaa735e7c38c8f3ea30981d73f_NotoSansJP-Light.ttf",
+        "textAlignment": "left",
+        "verticalTextAlignment": "top",
+        "characterSize": 20,
         "color": "0;0;0"
       }
     }
@@ -396,6 +455,9 @@
       },
       {
         "objectName": "Start_Text"
+      },
+      {
+        "objectName": "PlayerControls"
       }
     ]
   },
@@ -478,77 +540,6 @@
       "conditions": [
         {
           "type": {
-            "value": "CompareObjectTimer"
-          },
-          "parameters": [
-            "Start_Text",
-            "\"Text\"",
-            "<",
-            "2"
-          ]
-        }
-      ],
-      "actions": [
-        {
-          "type": {
-            "value": "ResetObjectTimer"
-          },
-          "parameters": [
-            "Start_Text",
-            "\"Text\""
-          ]
-        },
-        {
-          "type": {
-            "value": "Montre"
-          },
-          "parameters": [
-            "Start_Text",
-            ""
-          ]
-        }
-      ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "value": "CompareObjectTimer"
-          },
-          "parameters": [
-            "Start_Text",
-            "\"Text\"",
-            ">=",
-            "2"
-          ]
-        }
-      ],
-      "actions": [
-        {
-          "type": {
-            "value": "PauseObjectTimer"
-          },
-          "parameters": [
-            "Start_Text",
-            "\"Text\""
-          ]
-        },
-        {
-          "type": {
-            "value": "Cache"
-          },
-          "parameters": [
-            "Start_Text"
-          ]
-        }
-      ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
             "value": "DepartScene"
           },
           "parameters": [
@@ -569,13 +560,78 @@
             "20",
             ""
           ]
+        },
+        {
+          "type": {
+            "value": "ResetObjectTimer"
+          },
+          "parameters": [
+            "Start_Text",
+            "\"text\""
+          ]
+        },
+        {
+          "type": {
+            "value": "ResetObjectTimer"
+          },
+          "parameters": [
+            "PlayerControls",
+            "\"control\""
+          ]
         }
       ]
     },
     {
       "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [],
-      "actions": []
+      "conditions": [
+        {
+          "type": {
+            "value": "CompareObjectTimer"
+          },
+          "parameters": [
+            "Start_Text",
+            "\"text\"",
+            ">=",
+            "1"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "Cache"
+          },
+          "parameters": [
+            "Start_Text"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "CompareObjectTimer"
+          },
+          "parameters": [
+            "PlayerControls",
+            "\"control\"",
+            ">=",
+            "3"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "Cache"
+          },
+          "parameters": [
+            "PlayerControls"
+          ]
+        }
+      ]
     }
   ],
   "layers": [
