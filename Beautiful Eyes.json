@@ -16,11 +16,11 @@
     "pixelsRounding": false,
     "projectUuid": "3b01fa39-ada5-4f9d-abbd-435bacabaefe",
     "scaleMode": "linear",
-    "sizeOnStartupMode": "adaptWidth",
+    "sizeOnStartupMode": "",
     "templateSlug": "",
     "useExternalSourceFiles": false,
     "version": "1.0.0",
-    "name": "Influencer Snake",
+    "name": "Influencer Snakes",
     "description": "",
     "author": "",
     "windowWidth": 1280,
@@ -732,12 +732,12 @@
     {
       "name": "XCorner",
       "type": "number",
-      "value": 1184
+      "value": 1216
     },
     {
       "name": "YCorner",
       "type": "number",
-      "value": 672
+      "value": 608
     },
     {
       "name": "Score",
