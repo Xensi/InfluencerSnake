@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 0.8700232859857303,
+    "zoomFactor": 0.5843784410740942,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -2175,6 +2175,40 @@
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 608,
+      "keepRatio": true,
+      "layer": "",
+      "name": "WoodBackground",
+      "persistentUuid": "e5d6a958-de42-4987-a164-a25bb7010bab",
+      "width": 1216,
+      "x": 32,
+      "y": 32,
+      "zOrder": -1,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 608,
+      "keepRatio": true,
+      "layer": "",
+      "name": "StarryBackgroundStars2",
+      "persistentUuid": "a5f7c58b-ce63-474b-bb67-fe394778ebe5",
+      "width": 1216,
+      "x": 32,
+      "y": 32,
+      "zOrder": 0,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
     }
   ],
   "objects": [
@@ -3011,6 +3045,33 @@
       "effects": [],
       "behaviors": [],
       "animations": []
+    },
+    {
+      "assetStoreId": "08d9802965c3beec17416c0e0ff3f459710d2e2bf155c0e0ece4459d4efa98ec",
+      "bottomMargin": 64,
+      "height": 192,
+      "leftMargin": 64,
+      "name": "WoodBackground",
+      "rightMargin": 64,
+      "texture": "9patch_Wood Background_all_64.png",
+      "tiled": true,
+      "topMargin": 64,
+      "type": "PanelSpriteObject::PanelSprite",
+      "width": 192,
+      "variables": [],
+      "effects": [],
+      "behaviors": []
+    },
+    {
+      "assetStoreId": "c20fe4657b50f46f901b666ddae13412211ef388c101136bacecd5bee34520b4",
+      "height": 360,
+      "name": "StarryBackgroundStars2",
+      "texture": "tiled_Starry Background Stars 2.png",
+      "type": "TiledSpriteObject::TiledSprite",
+      "width": 640,
+      "variables": [],
+      "effects": [],
+      "behaviors": []
     }
   ],
   "objectsFolderStructure": {
@@ -3042,6 +3103,12 @@
       },
       {
         "objectName": "NewSprite"
+      },
+      {
+        "objectName": "WoodBackground"
+      },
+      {
+        "objectName": "StarryBackgroundStars2"
       }
     ]
   },

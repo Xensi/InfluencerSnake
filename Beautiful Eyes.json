@@ -654,6 +654,45 @@
           "identifier": "https://asset-resources.gdevelop.io/public-resources/Open Font License/44904f17cd5efc06565a08838d627234cda763a6406798f0cbbdf1cf60c676b3_PressStart2P-Regular.ttf",
           "name": "gdevelop-asset-store"
         }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/9patch_Wood Background_all_64.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "9patch_Wood Background_all_64.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Pirate Bomb Pack/Tile Sets/Wood Background/cde7121802cd226997240e3941fbaf9193a225e5ffff40cc849e918047959711_9patch_Wood Background_all_64.png",
+          "name": "9patch_Wood Background_all_64.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/tiled_Starry Background Shadows 2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "tiled_Starry Background Shadows 2.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/FoozleCC/Void Collection/Environment Pack/Backgrounds/2cfc385feb7b37522b19e6dbdc19b5edcdbe21da1a1645cb4390c66ea0f19b0a_tiled_Starry Background Shadows 2.png",
+          "name": "tiled_Starry Background Shadows 2.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/tiled_Starry Background Stars 2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "tiled_Starry Background Stars 2.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/FoozleCC/Void Collection/Environment Pack/Backgrounds/1dd0ee3b6ee4b0545ef9b3723a60ee4a10bb29bfd0fdd4845c460ba69bec4ce0_tiled_Starry Background Stars 2.png",
+          "name": "tiled_Starry Background Stars 2.png"
+        }
       }
     ],
     "resourceFolders": []
