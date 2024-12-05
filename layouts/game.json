@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 0.6040838749988974,
+    "zoomFactor": 0.9296875000000159,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -2208,7 +2208,7 @@
       "width": 1216,
       "x": 32,
       "y": 32,
-      "zOrder": 0,
+      "zOrder": -2,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -2225,7 +2225,7 @@
       "width": 1216,
       "x": 32,
       "y": 32,
-      "zOrder": -1,
+      "zOrder": -3,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -3430,9 +3430,9 @@
               "parameters": [
                 "Food",
                 "=",
-                "RandomWithStep(32, XCorner, 32)",
+                "RandomWithStep(64, XCorner, 32)",
                 "=",
-                "RandomWithStep(32, YCorner, 32)"
+                "RandomWithStep(64, YCorner, 32)"
               ]
             }
           ]
