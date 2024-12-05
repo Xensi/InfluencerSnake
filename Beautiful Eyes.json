@@ -648,6 +648,38 @@
           "identifier": "https://asset-resources.gdevelop.io/public-resources/FoozleCC/Void Collection/Environment Pack/Backgrounds/1dd0ee3b6ee4b0545ef9b3723a60ee4a10bb29bfd0fdd4845c460ba69bec4ce0_tiled_Starry Background Stars 2.png",
           "name": "tiled_Starry Background Stars 2.png"
         }
+      },
+      {
+        "file": "assets/Border.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/Border.png\"}",
+        "name": "Border",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Border2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/Border2.png\"}",
+        "name": "Border2",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Border3.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Border3",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Corner.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Corner",
+        "smoothed": true,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -726,12 +758,12 @@
     {
       "name": "XCorner",
       "type": "number",
-      "value": 1216
+      "value": 1184
     },
     {
       "name": "YCorner",
       "type": "number",
-      "value": 608
+      "value": 576
     },
     {
       "name": "Score",
