@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 0.41943397827591333,
+    "zoomFactor": 0.6040838749988974,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -3405,6 +3405,17 @@
             "=",
             "dialogueArray[Score]"
           ]
+        },
+        {
+          "type": {
+            "value": "RotateTowardAngle"
+          },
+          "parameters": [
+            "SnakeHead",
+            "90",
+            "0",
+            ""
+          ]
         }
       ],
       "events": [
@@ -3461,6 +3472,17 @@
             "=",
             "\"up\""
           ]
+        },
+        {
+          "type": {
+            "value": "RotateTowardAngle"
+          },
+          "parameters": [
+            "SnakeHead",
+            "0",
+            "0",
+            ""
+          ]
         }
       ]
     },
@@ -3496,6 +3518,17 @@
             "DesiredDir",
             "=",
             "\"down\""
+          ]
+        },
+        {
+          "type": {
+            "value": "RotateTowardAngle"
+          },
+          "parameters": [
+            "SnakeHead",
+            "180",
+            "0",
+            ""
           ]
         }
       ]
@@ -3533,6 +3566,17 @@
             "=",
             "\"left\""
           ]
+        },
+        {
+          "type": {
+            "value": "RotateTowardAngle"
+          },
+          "parameters": [
+            "SnakeHead",
+            "-90",
+            "0",
+            ""
+          ]
         }
       ]
     },
@@ -3568,6 +3612,17 @@
             "DesiredDir",
             "=",
             "\"right\""
+          ]
+        },
+        {
+          "type": {
+            "value": "RotateTowardAngle"
+          },
+          "parameters": [
+            "SnakeHead",
+            "90",
+            "0",
+            ""
           ]
         }
       ]
